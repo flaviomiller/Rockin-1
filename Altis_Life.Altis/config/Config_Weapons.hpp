@@ -52,7 +52,7 @@ class WeaponShops {
             { "10Rnd_9x21_Mag", "", 250, 100, "" } //Apex DLC - Had to guess this. Not referenced anywhere
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500, 100, "" }
+            { "optic_ACO_grn_smg", "", 1000, 100, "" }
         };
     };
 
@@ -131,6 +131,7 @@ class WeaponShops {
 			{ "muzzle_snds_H_MG_blk_F", "Silenciador 6.5mm", 7000 },
 			{ "muzzle_snds_B_khk_F", "Silenciador 7.62mm", 10000 },
 			{ "muzzle_snds_H", "Silenciador 6.5mm", 7000 }
+
         };
     };
 

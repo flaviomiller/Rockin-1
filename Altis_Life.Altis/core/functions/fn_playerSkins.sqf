@@ -87,7 +87,7 @@ switch (playerSide) do {
                 };
 
 				if (FETCH_CONST(life_coplevel) isEqualTo 9) then {
-                    _skinName = "textures\Roupas\Policiais\cop_srjp.jpg";
+                    _skinName = "textures\Roupas\Policiais\cop_srj.jpg";
                 };
 				
 				if (FETCH_CONST(life_coplevel) isEqualTo 10) then {
@@ -113,6 +113,7 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+		//Remover Mochila
 		(unitBackpack player) setObjectTextureGlobal [0,""];
     };
 

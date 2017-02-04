@@ -27,11 +27,11 @@ class Life_Settings {
     save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
-    save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
+    save_vehicle_virtualItems = false; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
     save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = false; //Save Arma inventory of vehicle to the database
-    save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
-    save_vehicle_damage = true; //Save vehicle damage to the database.
+    save_vehicle_fuel = false; //Save vehicle fuel level to the database (Impounded/Garaged).
+    save_vehicle_damage = false; //Save vehicle damage to the database.
     save_vehicle_illegal = false; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 
@@ -48,7 +48,7 @@ class Life_Settings {
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = false; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 180; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 300; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 75000; //Cost for a player to send a news station broadcast.
@@ -108,9 +108,9 @@ class Life_Settings {
     hospital_heal_fee = 100; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 40000; //Amount of cash in bank for new cops
-    bank_civ = 38000; //Amount of cash in bank for new civillians
-    bank_med = 40000; //Amount of cash in bank for new medics
+    bank_cop = 52000; //Amount of cash in bank for new cops
+    bank_civ = 52000; //Amount of cash in bank for new civillians
+    bank_med = 52000; //Amount of cash in bank for new medics
 
     paycheck_cop = 3000; //Payment for cops
     paycheck_civ = 1500; //Payment for civillians
@@ -138,25 +138,25 @@ class Life_Settings {
 
     /* Vehicle Purchase Prices */
     vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_COP = .5; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_MEDIC = .75; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_COP = .2; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_MEDIC = .1; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Rental Prices */
     vehicle_rental_multiplier_CIVILIAN = .80; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .2; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_MEDIC = .1; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Sell Prices */
     vehicle_sell_multiplier_CIVILIAN = .5; //Civilian Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_COP = .5; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_MEDIC = .5; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_COP = .2; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_MEDIC = .2; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_storage_fee_multiplier = .11; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     disableCommanderView = true; //false - Group leaders can access the commander view. true [default] - Group leaders cannot access the commander view.

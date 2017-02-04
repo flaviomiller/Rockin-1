@@ -41,6 +41,7 @@ class Life_Client_Core {
         class buyLicense {};
         class captureHideout {};
         class catchFish {};
+        class barrier {};
         class dpFinish {};
         class dropFishingNet {};
         class escortAction {};
@@ -165,8 +166,6 @@ class Life_Client_Core {
         class bankTransfer {};
         class bankWithdraw {};
         class displayHandler {};
-        class gangDeposit {};
-        class gangWithdraw {};
         class garageLBChange {};
         class impoundMenu {};
         class progressBar {};
@@ -194,6 +193,8 @@ class Life_Client_Core {
         class calWeightDiff {};
         class clearVehicleAmmo {};
         class dropItems {};
+        class robstore {};
+        class seizeObjects {};
         class escInterupt {};
         class fetchCfgDetails {};
         class fetchDeadGear {};
@@ -207,7 +208,6 @@ class Life_Client_Core {
         class hideObj {};
         class clearPlayer {};
         class hudSetup {};
-        class gpsTracker {};
         class hudUpdate {};
         class inventoryClosed {};
         class inventoryOpened {};
@@ -282,6 +282,7 @@ class Life_Client_Core {
         class boltcutter {};
         class defuseKit {};
         class flashbang {};
+        class gpsTracker {};
         class jerrycanRefuel {};
         class jerryRefuel {};
         class lockpick {};
@@ -296,6 +297,7 @@ class Life_Client_Core {
         class medicLights {};
         class medicLoadout {};
         class medicMarkers {};
+        class newLifeRule {};
         class medicRequest {};
         class medEnter {};
         class medicSiren {};

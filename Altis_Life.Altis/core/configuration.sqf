@@ -50,6 +50,8 @@ life_markers = false;
 life_canpay_bail = true;
 life_gps_point = "";
 life_lastgps_point = "";
+life_nlrtimer_running = false;
+life_nlrtimer_stop = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

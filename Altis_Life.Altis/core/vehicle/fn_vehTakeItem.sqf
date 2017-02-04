@@ -41,8 +41,6 @@ if (_ctrl == "money") then {
     [0] call SOCK_fnc_updatePartial;
     life_trunk_vehicle setVariable ["Trunk",[_data,(_old select 1) - _weight],true];
     [life_trunk_vehicle] call life_fnc_vehInventory;
-if ((time - life_action_delay) < 2) exitWith {hint localize "STR_NOTF_ActionDelay";}; // No glitch.
-    life_action_delay = time;
 } else {
     if ([true,_ctrl,_num] call life_fnc_handleInv) then {
         if (_num == _value) then {

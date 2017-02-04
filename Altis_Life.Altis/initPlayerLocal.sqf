@@ -17,3 +17,5 @@ CONST(BIS_fnc_endMission,BIS_fnc_endMission);
 if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
 
 [] execVM "core\init.sqf";
+
+BarrierOpen = 0;

@@ -54,5 +54,5 @@ if (_shooter isKindOf "Man" && alive player) then {
     };
 } else {
     _unit allowDamage true;
-    life_istazed = false;
+    life_iztazed = false;
 };

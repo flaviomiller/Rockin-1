@@ -41,14 +41,14 @@ class CfgSpawnPoints {
             };
 
             class RebelN {
-                displayName = "Northern Rebel Base";
+                displayName = "Morro do Careca";
                 spawnMarker = "Rebelop";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
 
             class RebelS {
-                displayName = "Southern Rebel Base";
+                displayName = "Morro do Korintia";
                 spawnMarker = "Rebelop_1";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
@@ -62,7 +62,7 @@ class CfgSpawnPoints {
             };
 
             class RebelE {
-                displayName = "Eastern Rebel Base";
+                displayName = "Morro do Alemão";
                 spawnMarker = "Rebelop_2";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
@@ -71,35 +71,35 @@ class CfgSpawnPoints {
 
         class Cop {
             class Kavala {
-                displayName = "Kavala HQ";
+                displayName = "Delegacia de Kavala";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
 
             class Athira {
-                displayName = "Athira HQ";
+                displayName = "Delegacia de Athira";
                 spawnMarker = "cop_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
                 conditions = "";
             };
 
             class Pyrgos {
-                displayName = "Pyrgos HQ";
+                displayName = "Delegacia de Pyrgos";
                 spawnMarker = "cop_spawn_2";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "";
             };
 
             class Air {
-                displayName = "Air HQ";
+                displayName = "GRPAE";
                 spawnMarker = "cop_spawn_4";
                 icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
-                conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+                conditions = "call life_coplevel >= 13 && {license_cop_cAir}";
             };
 			
             class HW {
-                displayName = "HW Patrol";
+                displayName = "P. Rodoviaria Telos";
                 spawnMarker = "cop_spawn_5";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 3";
@@ -108,21 +108,21 @@ class CfgSpawnPoints {
 
         class Medic {
             class Kavala {
-                displayName = "Kavala Hospital";
+                displayName = "Hospital das Clinicas";
                 spawnMarker = "medic_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
 
             class Athira {
-                displayName = "Athira Regional";
+                displayName = "Hospital Einstein";
                 spawnMarker = "medic_spawn_2";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
 
             class Pyrgos {
-                displayName = "Pyrgos Hospital";
+                displayName = "Hospital Samaritano";
                 spawnMarker = "medic_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";

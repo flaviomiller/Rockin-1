@@ -12,7 +12,7 @@ if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFi
 _item = CONTROL_DATA(2005);
 
 switch (true) do {
-    case (_item in ["waterBottle","coffee","redgull"]): {
+    case (_item in ["waterBottle","coffee","cocacola,","redgull"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
             if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
@@ -65,6 +65,10 @@ switch (true) do {
         if !(isNull objectParent player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
         [] spawn life_fnc_jerryRefuel;
         closeDialog 0;
+    };
+	
+    case (_item isEqualTo "gpstracker"): { // added
+	[cursorTarget] spawn life_fnc_gpsTracker;
     };
 
     case (_item isEqualTo "fuelEmpty"): {

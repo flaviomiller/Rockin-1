@@ -13,28 +13,28 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "gpstracker" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator","gpstracker" };
     };
 	
     class Mercadorias_Roubadas {
         name = "STR_MAR_Mercadorias_Roubadas";
         side = "civ";
         conditions = "";
-        items[] = { "legalweed", "cocacola", "iron_refined", "copper_refined", "ruby_refined", "diamond_cut", "salt_refined", "cement", "GamingComputer", "processed_memory", "processed_motherboard", "processed_processor", "processed_graphics", "whiskey", "whiskeyaged", "oil_processed" };
+        items[] = { "legalweed", "cocacola", "ritalina", "iron_refined", "copper_refined", "ruby_refined", "diamond_cut", "salt_refined", "cement", "GamingComputer", "processed_memory", "processed_motherboard", "processed_processor", "processed_graphics", "whiskey", "whiskeyaged", "oil_processed" };
     };
 	
 	class Premium {
         name = "STR_Shops_Premium";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "zipties", "blindfold" };
+        items[] = { "gpstracker","waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "zipties", "blindfold" };
     };
 	
     class cocacola {
@@ -118,14 +118,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "gpstracker" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "gpstracker" };
     };
 
     class wongs {
@@ -146,14 +146,14 @@ class VirtualShops {
         name = "STR_Shop_Station_Coffee";
         side = "";
         conditions = "";
-        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull"};
+        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull", "gpstracker"};
     };
 
     class drugdealer {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "metanfetamina" };
     };
 
     class oil {
@@ -216,7 +216,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "gpstracker" };
     };
 };
 

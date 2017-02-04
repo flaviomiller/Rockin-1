@@ -142,6 +142,24 @@ while {deleteManagerPublic} do {
 		};
 	};
 	sleep 1;
+	//================================= CRATERS SMALL
+	if (!(_craterLimit isEqualTo -1)) then {
+		if ((count (allMissionObjects "CraterLong_small")) > _craterLimit) then {
+			while {(((count (allMissionObjects "CraterLong_small")) - _craterLimit) > 0)} do {
+				deleteVehicle ((allMissionObjects "CraterLong_small") select 0);
+				sleep 0.5;
+			};
+		} else {
+			if (_craterDistCheck) then {
+				{
+					if ([_x,_craterDist,(playableUnits + switchableUnits)] call _isHidden) then {
+						deleteVehicle _x;
+					};
+				} count (allMissionObjects "CraterLong_small");
+			};
+		};
+	};
+	sleep 1;
 	//================================= WEAPON HOLDERS
 	if (!(_weaponHolderLimit isEqualTo -1)) then {
 		if ((count (allMissionObjects "WeaponHolder")) > _weaponHolderLimit) then {

@@ -95,6 +95,11 @@ switch (typeOf _vehicle) do
     {
         _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
      };
+
+    case "I_Heli_light_03_unarmed_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+     };
 };
 
 _lightright setLightAttenuation [0.181, 0, 1000, 130];

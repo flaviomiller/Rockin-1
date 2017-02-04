@@ -224,6 +224,9 @@
         <Key ID="STR_License_CocaCola">
             <Original>Fabrição de Coca-Cola</Original>
         </Key>
+        <Key ID="STR_License_gaming">
+            <Original>Processar PC Gaming</Original>
+        </Key>
         <Key ID="STR_License_processor">
             <Original>Fabr. Processadores</Original>
         </Key>
@@ -462,6 +465,10 @@
 		 <Key ID="STR_Brinks_Guns">
             <Original>Brinks Store</Original>
             <Portuguese>Equipamentos Brinks</Portuguese>
+        </Key>
+		 <Key ID="STR_NOTF_ATM">
+            <Original>ATM</Original>
+            <Portuguese>ATM</Portuguese>
         </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Steve's Diving Shop</Original>
@@ -9424,7 +9431,7 @@
             <Spanish>Estación de Policia</Spanish>
             <Russian></Russian>
             <German>Polizei Revier</German>
-            <Portuguese>Estação Policial</Portuguese>
+            <Portuguese>Delegacia</Portuguese>
             <Polish>Posterunek policji</Polish>
             <Italian>Questura</Italian>
         </Key>
@@ -9436,7 +9443,7 @@
             <Italian>QG Aereo Polizia</Italian>
             <Russian></Russian>
             <German>Polizei HQ Flughafen</German>
-            <Portuguese>QG Aéreo Policial</Portuguese>
+            <Portuguese>GRPAE</Portuguese>
             <Polish>Baza lotnicza policji</Polish>
         </Key>
         <Key ID="STR_MAR_Iron_Mine">

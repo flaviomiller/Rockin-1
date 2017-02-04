@@ -27,7 +27,7 @@ class CfgRemoteExec {
         F(life_fnc_freezePlayer,CLIENT)
         F(life_fnc_gangCreated,CLIENT)
         F(life_fnc_gangDisbanded,CLIENT)
-        F(life_fnc_gangInvite,CLIENT)
+        F(life_fnc_gangInvite,CLIENT)		
         F(life_fnc_garageRefund,CLIENT)
         F(life_fnc_giveDiff,CLIENT)
         F(life_fnc_hideObj,CLIENT)

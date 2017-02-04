@@ -24,7 +24,7 @@ _zone1dis = 400;
 _zone2dis = 300;
 _zone3dis = 300;
 _zone4dis = 230;
-_zone5dis = 70;
+_zone5dis = 80;
 _zone6dis = 180;
 _zone7dis = 70;
 _zone8dis = 80;
@@ -40,7 +40,7 @@ _zone16dis = 100;
 _dis = 350;
 _inArea = false;
 
-_enterText = "Entrando em uma cidade com zona segura.";
+_enterText = "Entrando em uma cidade pacificada.";
 _leaveText = "Deixando uma cidade! Tenha uma boa viagem.";
 
 switch (playerSide) do

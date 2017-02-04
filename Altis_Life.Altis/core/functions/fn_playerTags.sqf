@@ -43,14 +43,21 @@ private _index = -1;
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-                        case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-                        case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-                        case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-                        case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-                        case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-                        case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-                        case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-                        default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                        case 2: {"icons\RockIn\PMSP.paa"};
+                        case 3: {"icons\RockIn\PMRJ.paa"};
+                        case 4: {"icons\RockIn\PMSP.paa"};
+                        case 5: {"icons\RockIn\PMRJ.paa"};
+                        case 6: {"icons\RockIn\PMSP.paa"};
+                        case 7: {"icons\RockIn\PMRJ.paa"};
+                        case 8: {"icons\RockIn\PMSP.paa"};
+                        case 9: {"icons\RockIn\PMRJ.paa"};
+                        case 10: {"icons\RockIn\PMSP.paa"};
+                        case 11: {"icons\RockIn\PMRJ.paa"};
+                        case 12: {"icons\RockIn\PMSP.paa"};
+                        case 13: {"icons\RockIn\PMRJ.paa"};
+                        case 14: {"icons\RockIn\PMSP.paa"};
+                        case 15: {"icons\RockIn\GRPAE.paa"};
+                        case 16: {"icons\RockIn\PFD.paa"};
                         },_x getVariable ["realname",name _x]]};
                     case (side _x isEqualTo independent): {format ["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
                     default {

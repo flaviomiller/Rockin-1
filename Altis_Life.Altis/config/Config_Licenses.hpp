@@ -153,6 +153,14 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
+	
+    class Metanfetamina {
+        variable = "metanfetamina";
+        displayName = "STR_License_Metanfetamina";
+        price = 90000;
+        illegal = true;
+        side = "civ";
+    };
 
     class rebel {
         variable = "rebel";
@@ -212,6 +220,14 @@ class Licenses {
         side = "civ";
     };
 	
+    class gamingcomputer {
+        variable = "gamingcomputer";
+        displayName = "STR_License_gaming";
+        price = 60000;
+        illegal = false;
+        side = "civ";
+    };
+	
     class ritalina {
         variable = "ritalina";
         displayName = "STR_License_Ritalina";
@@ -233,14 +249,6 @@ class Licenses {
         displayName = "STR_License_Whiskey_Aged";
         price = 43000;
         illegal = false;
-        side = "civ";
-    };
-	
-    class Metanfetamina {
-        variable = "metanfetamina";
-        displayName = "STR_License_Metanfetamina";
-        price = 130000;
-        illegal = true;
         side = "civ";
     };
 
