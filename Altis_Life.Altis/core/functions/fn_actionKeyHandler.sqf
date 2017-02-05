@@ -138,11 +138,11 @@ if(_alt) then
                 waitUntil {scriptDone _handle};
 [1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
 _msg = format["O jogador %1 apertou ALT+F4 e perdeu todos os seus itens.",name player];
-[[0,_msg],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
                 [] call SOCK_fnc_updateRequest;
             };
-};
-};
+        };
+    };
+	
 case 211:
 {
 if(_ctrlKey && _alt) then
@@ -152,13 +152,13 @@ if(_ctrlKey && _alt) then
                 private["_handle"];
                 _handle = [] spawn life_fnc_clearPlayer;
                 waitUntil {scriptDone _handle};
-[1,format[Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
+[1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
 _msg = format["O jogador %1 apertou CTRL + ALT + DEL e perdeu todos os seus itens.",name player];
-[[0,_msg],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
                 [] call SOCK_fnc_updateRequest;
-};
-};
-};
+            };
+        };
+    };
+	
 case 1:
 {
 if(_ctrlKey) then
@@ -170,11 +170,9 @@ if(_ctrlKey) then
                 waitUntil {scriptDone _handle};
 [1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
 _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",name player];
-[[0,_msg],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
                 [] call SOCK_fnc_updateRequest;
-};
-};
-};
-};
+            };
+        };
+    };
 
 _handled;
