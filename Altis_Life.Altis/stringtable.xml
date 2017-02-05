@@ -32,6 +32,28 @@
             <Portuguese>Menu GPS</Portuguese>
             <Polish>GPS Menu</Polish>
         </Key>		
+        <Key ID="STR_Garage_HouseBuyMSG">
+            <Original>Comprar Garagem</Original>
+        </Key>	
+        <Key ID="STR_GNOTF_CaptureAreaAttemptPopo">
+            <Original>%1 a polícia está tentando pacíficar a região!</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturingArea">
+            <Original>Capturando cartel.</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturedArea">
+            <Original>Cartel foi capturado.</Original>
+        </Key>
+
+        <Key ID="STR_Gang_captuerr">
+            <Original>Capturar Cartel.</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CaptureAreaSuccess">
+            <Original>%1 e sua quadrilha: %2 - capturaram um cartel!</Original>
+        </Key>
         <Key ID="STR_location_CSP">
             <Original>Current GPS Point</Original>
             <Czech>Current GPS Point</Czech>
@@ -103,6 +125,11 @@
             <Original>Blindfold</Original>
             <English>Blindfold</English>
 			<Portuguese>Saco de Sequestro</Portuguese>
+        </Key>
+		<Key ID="STR_Item_cocacola">
+            <Original>Coca-Cola</Original>
+            <English>Coca-Cola</English>
+			<Portuguese>Coca-Cola</Portuguese>
         </Key>
 		<Key ID="STR_Item_ritalina">
             <Original>Ritalina</Original>

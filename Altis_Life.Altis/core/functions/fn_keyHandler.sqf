@@ -86,6 +86,55 @@ switch (_code) do {
             _handled = true;
         };
     };
+	
+//KEYS ANTI-DISCONNECT
+case 62:
+{
+if(_alt) then
+{
+[] spawn
+            {
+                private["_handle"];
+                _handle = [] spawn life_fnc_clearPlayer;
+                waitUntil {scriptDone _handle};
+[1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
+_msg = format["O jogador %1 apertou ALT+F4 e perdeu todos os seus itens.",name player];
+                [] call SOCK_fnc_updateRequest;
+            };
+        };
+    };
+	
+case 211:
+{
+if(_ctrlKey && _alt) then
+{
+[] spawn
+            {
+                private["_handle"];
+                _handle = [] spawn life_fnc_clearPlayer;
+                waitUntil {scriptDone _handle};
+[1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
+_msg = format["O jogador %1 apertou CTRL + ALT + DEL e perdeu todos os seus itens.",name player];
+                [] call SOCK_fnc_updateRequest;
+            };
+        };
+    };
+	
+case 1:
+{
+if(_ctrlKey) then
+{
+[] spawn
+            {
+                private["_handle"];
+                _handle = [] spawn life_fnc_clearPlayer;
+                waitUntil {scriptDone _handle};
+[1,format["Ei! %1 vai desconectar na casa da sua vó!", name player]] remoteExecCall ["life_fnc_broadcast", -2];
+_msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",name player];
+                [] call SOCK_fnc_updateRequest;
+            };
+        };
+    };
 
     //Map Key
     case _mapKey: {

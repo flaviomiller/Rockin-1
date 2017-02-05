@@ -241,6 +241,7 @@ class Life_Client_Core {
     class Gangs {
         file = "core\gangs";
         class createGang {};
+        class areaCapture {};
         class gangCreated {};
         class gangDisband {};
         class gangDisbanded {};

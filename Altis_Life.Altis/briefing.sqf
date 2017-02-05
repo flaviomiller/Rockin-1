@@ -662,7 +662,7 @@ Whiskey Envelhecido:     3000    4kg<br/>
  
 Vidro:                   1500    4kg<br/>
  
-Maconha by SnoopDog:     1500    4kg</br>
+Maconha Ilegal:          1500    4kg</brK
        <br/> 
 Farms Ilegais<br/><br/>
  
@@ -701,9 +701,9 @@ Areia:                 30.000<br/>
 Maconha by SnoopDog:   30.000<br/>
 
  <br/>
-Licenca Casa                     1.000.000<br/>
+Licenca Casa                     400.000<br/>
  <br/>
-Licenca Rebelde(Perde ao ser preso)500.000<br/>
+Licenca Rebelde(Perde ao ser preso)750.000<br/>
  <br/>              
 Farms Ilegais<br/>
  
