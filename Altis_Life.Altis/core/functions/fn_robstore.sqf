@@ -69,5 +69,5 @@ if!(alive _robber) exitWith {};
 [getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
 };
 sleep 300;
-_action = _shop addAction["Assaltar o posto."",life_fnc_robstore];
+_action = _shop addAction["Assaltar o posto.",life_fnc_robstore];
 _shop switchMove "";
