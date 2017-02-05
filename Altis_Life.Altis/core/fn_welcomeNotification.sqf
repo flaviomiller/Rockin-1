@@ -28,8 +28,7 @@ _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
 _message = _message + "Bem vindos ao Servidor RockInALtis.<br /><br />";
 _message = _message + "Missão atualizada e focando em um Roleplay alternativo. <br /><br />";
-_message = _message + "Do dia 01/02 ao dia 30/02, estaremos promovendo o mês "VIP Free", no qual todos estão convidados a jogar sem diferenças.  <br /><br />";
-_message = _message + "Empresas! Fazendas e Industrias! Noite sem NightVision e muito mais! Bem vindo ao Roleplay Alternativo. Somente para os fortes.</a>  <br /><br />";
+_message = _message + "Cartéis em CONSTRUÇÃO! Empresas! Fazendas e Industrias! Noite sem NightVision e muito mais! Bem vindo ao Roleplay Alternativo. Somente para os fortes.</a>  <br /><br />";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
