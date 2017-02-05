@@ -9,6 +9,7 @@ StartProgress = false;
 
 if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
+};
     [] execVM "KRON_Strings.sqf";
     [] execVM "custom\safezone.sqf";
     [] execVM "custom\safezone_empresas.sqf";
@@ -16,11 +17,10 @@ if (hasInterface) then {
     [] execVM "custom\safezone_tribunal.sqf";
     [] execVM "custom\safezone_ilegais.sqf";
     [] execVM "custom\deletetask.sqf";
-    [] execVM "custom\IntLight.sqf"
-    [] execVM "custom\irstrobe.sqf"
-    [] execVM "custom\clean.sqf"
-    [] execVM "core\scripts\fn_statusBar.sqf";
-};
+    [] execVM "custom\IntLight.sqf";
+    [] execVM "custom\irstrobe.sqf";
+    [] execVM "custom\clean.sqf";
+    [] execVM "custom\statusBar.sqf";
 
 //no rain please
 [] spawn {
