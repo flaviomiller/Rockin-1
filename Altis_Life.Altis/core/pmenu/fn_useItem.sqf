@@ -98,6 +98,28 @@ switch (true) do {
     default {
         hint localize "STR_ISTR_NotUsable";
     };
+	
+		case (_item isEqualTo "marijuana"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_weed;
+		};
+	};
+	
+		case (_item isEqualTo "cocaine_processed"):
+	{
+		if(playerSide in [west,independent]) exitWith {hint "Nada de droga no serviço!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_useKokain;
+		};
+	};
+
+	default
+	{
+		hint "Você não pode usar esse item.";
+	};
 };
 
 [] call life_fnc_p_updateMenu;
