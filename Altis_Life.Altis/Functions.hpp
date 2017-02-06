@@ -74,7 +74,8 @@ class Life_Client_Core {
         class storeVehicle {};
         class surrender {};
         class ticketAction {};
-        class unrestrain {};
+        class unrestrain {};		
+		class playSound {};
     };
 	
     class GPS {
@@ -238,6 +239,12 @@ class Life_Client_Core {
         class whereAmI {};
     };
 
+		class Cam
+	{
+	   file ="core";
+	   class IntroCam {};
+	};
+	
     class Gangs {
         file = "core\gangs";
         class createGang {};
@@ -290,6 +297,8 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+		class weed {};
+		class useKokain {};
     };
 
     class Medical_System {

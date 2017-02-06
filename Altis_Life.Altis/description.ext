@@ -88,6 +88,20 @@ class CfgSounds {
         titles[] = {};
     };
 
+		class coca
+	{
+		name= "coca";
+		sound[] = {"sounds\coca.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class mari
+	{
+		name= "mari";
+		sound[] = {"sounds\mari.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
     class harvest {
         name = "harvest";
         sound[] = {"\sounds\harvest.ogg", 1.0, 1};
@@ -105,6 +119,34 @@ class CfgSounds {
         sound[] = {"\sounds\cuff.ogg", 0.25, 1};
         titles[] = {};
     };
+	
+		class Intro
+    {
+        name = "Intro";
+		sound[] = {"\sounds\Intro.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro2
+    {
+        name = "Intro2";
+		sound[] = {"\sounds\Intro2.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro3
+    {
+        name = "Intro3";
+		sound[] = {"\sounds\Intro3.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro4
+    {
+        name = "Intro4";
+		sound[] = {"\sounds\Intro4.ogg", 0.30, 1};
+		titles[] = {};
+	};
 	
     class CarAlarm {
         name = "CarAlarm";

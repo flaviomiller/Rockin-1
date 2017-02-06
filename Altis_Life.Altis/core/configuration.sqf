@@ -52,6 +52,9 @@ life_gps_point = "";
 life_lastgps_point = "";
 life_nlrtimer_running = false;
 life_nlrtimer_stop = false;
+life_drugged_weed = -1;
+life_drugged_weed_duration = 3;
+
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
