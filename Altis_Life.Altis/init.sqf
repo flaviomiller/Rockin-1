@@ -20,7 +20,7 @@ if (hasInterface) then {
     [] execVM "custom\IntLight.sqf";
     [] execVM "custom\irstrobe.sqf";
     [] execVM "custom\clean.sqf";
-    [] execVM "custom\statusBar.sqf";
+    [] execVM "core\scripts\fn_statusBar.sqf";
 
 //no rain please
 [] spawn {

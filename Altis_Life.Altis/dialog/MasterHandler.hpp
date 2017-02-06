@@ -29,3 +29,4 @@
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
 #include "gpsSelection.hpp"
+#include "statusBar.hpp"
