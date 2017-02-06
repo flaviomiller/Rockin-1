@@ -49,7 +49,7 @@ _unit spawn {
     _Timer = ((findDisplay 7300) displayCtrl 7301);
 	
         if (playerSide isEqualTo independent || playerSide isEqualTo resistance) then {
-            _maxTime = time + 140;
+            _maxTime = time + 150;
         } else { 
 			if (independent countSide playableUnits isEqualTo 0) then {
 				_maxTime = time + 180;
