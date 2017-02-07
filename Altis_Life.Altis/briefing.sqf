@@ -4,11 +4,11 @@ if (player diarySubjectExists "controls") exitWith {};
 player createDiarySubject ["Novidades","Novidades"];
 player createDiarySubject ["credits","Credits"];
 //player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["Regras Gerais","Regras Gerais"];
-player createDiarySubject ["Safezones","Safezones"];
-player createDiarySubject ["Rebeldes","Rebeldes"];
-player createDiarySubject ["Policiais","Regras de COP"];
-player createDiarySubject ["SAMU","SAMU"];
+//player createDiarySubject ["Regras Gerais","Regras Gerais"];
+//player createDiarySubject ["Safezones","Safezones"];
+//player createDiarySubject ["Rebeldes","Rebeldes"];
+//player createDiarySubject ["Policiais","Regras de COP"];
+//player createDiarySubject ["SAMU","SAMU"];
 //player createDiarySubject ["civrules","Civilian Rules"];
 //player createDiarySubject ["gangrules","Gang Rules"];
 //player createDiarySubject ["Safezones","Safezones"];
@@ -97,8 +97,193 @@ This section is meant for people doing their own edits to the mission, DO NOT RE
                 "
         ]
     ];
+
+
+
+
+     player createDiaryRecord ["Regras gerais",
+        [
+        "Preço de multas",
+                "
+Gravíssima = 8000 / Grave = 5000 / Média = 3000 / Leve = 1000<br/><br/>
+
+1. Transitar com velocidade até 20% a mais da velocidade máxima da via  Multa média<br/>
+2. Transitar com velocidade de 20% a 50% de velocidade máxima da via = Multa grave<br/>
+3. Transitar com velocidade acima de 50% da velocidade máxima da via = Multa gravíssima x3 + Retenção da licença de motorista<br/>
+4. Andar na contramão = Multa Grave<br/>
+5. Não dar passagem a policia ou ambulâncias = Multa gravíssima<br/>
+6. Fuga de acidente = Multa grave<br/>
+7. Fuga de acidente com vitima = Multa gravíssima x3 + Retenção da licença de motorista<br/>
+8. Andar sem a licença de motorista = Multa gravíssima x3 + Retenção do veiculo<br/>
+9. Não parar em bloqueio policial = Multa gravíssima<br/>
+10. Efetuar conversão em locais proibidos = Multa grave<br/>
+11. Forçar passagem entra veículos = Multa gravíssima x10 + Retenção da licença de motorista<br/>
+12. Não reduzir próximo a hospitais, estações de embarque e desembarque ou houvendo movimentação de pedestres = Multa gravíssima<br/>
+13. Buzina prolongada e sucessivamente = Multa leve<br/>
+14. Estacionar impedindo a movimentação de outros veículos = Multa média + Remoção do veiculo<br/>
+15. Estacionar em fila dupla = Multa grave + Remoção do veiculo<br/>
+16. Estacionar fora da posição estabelecida = Multa média + Remoção do veiculo<br/>
+17. Estacionar no meio da via a espera do resgate = Multa grave + Remoção do veiculo<br/>
+18. Para em cima do meio fio = Multa média<br/>
+19. Para em pista de rolamento, rodovias e vias de transito rápido = Multa grave<br/>
+20. Andar com farol apagado ou quebrado = Multa grave<br/>
+21. Transporte de cargas acima de 400 em vias de transito rápido ou rodovias = Multa média<br/>
+22. Danificar vias e sinalizações = Multa gravíssima x3 + Retenção da licença de motorista<br/>
+23. Danificar patrimônios  públicos ou privados = Multa gravíssima x5 + Retenção da licença de motorista<br/>
+24. Dirigir sob efeito de álcool ou de qualquer substância psicoativa = Multa gravíssima x10 + Retenção da licença de motorista + Prisão<br/><br/>
+
+                "
+        ]
+    ];
+
+
+
+     player createDiaryRecord ["Regras gerais",
+        [
+        "Regras de Transito",
+                "
+A velocidade maxima permitida nas vias de RockIn:<br/>
+  130 km/h nas vias de trânsito rápido ou Rodovias.<br/>
+  90 km/h nas vias fora da cidade<br/>
+  60 km/h vias dentro da cidade<br/><br/>
+
+6.1: O patrulhamento das vias sera feito pela Companhia de Engenharia de Transito (C.E.T.) e policiais<br/>
+6.2: Qualquer infração será passível de multa<br/>
+6.3: Em casos de acidente retirar o veiculo da via e esperar o regate<br/>
+6.3.1: Em caso de vitima fatal, esperar o CET chegar ao local<br/>
+6.4: Em caso de vitima, parar o carro chamar o socorro e o CET ou policias e esperar os mesmos<br/><br/>
+
+                "
+        ]
+    ];
+
+
     
+    player createDiaryRecord ["Regras Gerais",
+        [
+            "SAMU",
+                "
+O Samu dentro do servidor irá exercer a função de médico, bombeiro e mecânico. Qualquer problema que algum jogador venha a ter seja ele por falhas mecânicas no carro ou perda de vida, o SAMU deve sempre estar de prontidão para atender todos.<br/>
+O Equipamento do SAMU consistem em Desfibrilador e Kit de reparos, sendo seu principal meio de locomoção o Helicóptero.<br/><br/>
+
+5.1 -    SAMU após efetuar o resgate, pode dar carona ao jogador até o hospital mais próximo.<br/>
+5.2 -    SAMU não poderá transportar nenhum item em seu helicóptero.<br/>
+5.3 -    Enquanto não houverem chamamos O SAMU deverá permanecer nos hospitais, ou nas cidade principais(Athira, Chapecó ou Kavala) dando suporte aos jogadores.<br/>
+5.4 -    SAMU não está autorizada a reviver ninguém nas imediações da reserva federal durante PVP de roubo a reserva.<br/>
+5.5 -    A prioridade de reviver é sempre do Policial.<br/>
+5.6 -    Em casos de Role-Play, o SAMU que tentar ressuscitar um jogador e receber avisos via celular ou por tiros, tanto vindo de rebeldes quanto de COPs, deverá se afastar e aguardar o RP acabar, pois está em zona de conflito;<br/>
+5.6.1 -    O Samu após receber aviso, está sujeito a morrer caso tente reviver o jogador no meio do combate.<br/>
+5.7 -    O Policial que foi ressuscitado após morrer em “acidente” terá o direito de escolher se quer ou não ser levado ao hospital.<br/>
+5.8 -    O Policial que foi ressuscitado após morrer em “confronto” é obrigatório acompanhar o samu até o hospital!<br/>
+5.9 -    Qualquer jogador que for morto em PVP e revivido pelo SAMU terá suas armas apreendidas!<br/>
+5.9.1 -    O Samu pode dispensar a apreensão de arma em caso de acidentes com veículos.<br/>
+                "
+        ]
+    ];
     
+
+    player createDiaryRecord ["Regras Gerais",
+        [
+            "Regras de COP",
+                "
+Policiais são aqueles que tem o objetivo de deixar Altis mais seguro, apreendendo jogadores, veículos, drogas e armamentos ilegais.<br/>
+O policial deve sempre prezar a vida dos civis.<br/>
+O Policial tem acesso a armamento letal, e armamento não letal. <br/>
+O policial deve sempre tentar conversar com o jogador e somente em último caso deverá utilizar o armamento não letal ou armamento letal em casos onde a vida de outros estão em risco.<br/><br/>
+
+4.1 -    Nenhum cop está autorizado a logar como civil, salvo autorizado pelo Coronel da corporação.<br/>
+4.2 -    Respeitar todos os jogadores, agir cordialmente e educadamente respeitando as abordagens conforme orientado por seu superiores.<br/>
+4.3 -    Após a morte em confronto de PvP contra rebeldes o policial somente poderá voltar após 15 MINUTOS!<br/>
+4.3.1 -    Em casos de reserva o policial poderá voltar em 10 minutos.<br/>
+4.4 -    O Blindado, somente poderá ser utilizado durante assalto a reserva federal e sob comando de oficial superior com patente mínima de Sargento;<br/>
+4.5 -    Apenas 2 aeronaves policiais no ar são permitidas. 1 Helicóptero já é o suficiente, subir outro apenas com autorização do superior.<br/>
+4.6 -    Ao capturar um criminoso, o policial deverá levá-lo imediatamente sem demora para a DP, Delegacia mais próxima FORA de Safe-Zones, onde será explicado tudo ao indivíduo. Essa ação se dá para evitar emboscadas, principalmente quando faz parte de uma Gangue.<br/>
+4.7 -    Em casos de PvP, tiroteio onde os Policiais ficam sozinhos com risco de vida sem possibilidades de levar alguém preso, eles têm a autonomia de  algemar sem avisar qualquer um que estiver próximo da operação. <br/>
+4.8 -    Em caso de ausência, o policial pode ficar no máximo 1 semana fora (sem aviso da ausência), caso contrário, poderá ser demitido.<br/>
+4.9 -    É extremamente proibido cop descer na sala de samu ou civil.<br/>
+4.10 -    Armamento letal só poderá ser utilizado quando a vida de Policiais ou de terceiros estiverem em risco ou caso exista alguma ação de roleplay onde a arma letal e necessária. A força letal deve ser utilizada somente em ÚLTIMO CASO!<br/>
+4.11 -    Armamento não letal poderá ser usado em abordagens onde o jogador está desarmado e tente empreender fuga.<br/>
+4.12 -    Em casos de sequestro o policial deverá responder o sequestrador em menos de 5 minutos, e sair de qualquer ação de roleplay para negociar. (Para saber mais sobre os deveres de um policial, vá para Regras de Sequestro e Assalto).<br/>
+4.13 -    A prisão só deverá ser aplicada caso o jogador esteja procurado pela polícia, ou esteja desacatando policiais, farmando drogas ou após uma ação de roleplay. Caso contrário uma multa deverá ser aplicada.<br/>
+4.14 -    Multas devem ter um valor máximo de 200.000(Duzentos mil).<br/>
+4.15 -    A retirada do A-143 Buzzard está autorizada somente para operações com XYAN ou BLACKFISH. Qualquer outra aeronave o uso do A-143 Buzzard está proibida.<br/>
+4.15.1 -    Deve se considerar que deverá ser zelada a vida e os bens materiais de todos os envolvidos, portanto o Policial deverá efetuar disparos a fim de FORÇAR um pouso e somente em últimos casos, após muitos avisos e disparos com tentativa de forçar o pouso da aeronave, a mesma deverá ser abatida.<br/><br/>
+                "
+        ]
+    ];
+
+
+    
+
+    player createDiaryRecord ["Regras Gerais",
+        [
+            "Relações Rebeldes x Rebeldes",
+                "
+3.11-    Um jogador rebelde pode abordar, assaltar, algemar, sequestrar qualquer outro jogador rebelde, desde que esteja seguindo as regras.<br/>
+3.12-    É Rebelde? morreu para rebelde? não chore parceiro... escolheu ser vida louca, então sem choro…<br/><br/>
+                "
+        ]
+    ];
+
+    player createDiaryRecord ["Regras Gerais",
+        [
+            "Regras para Rebeldes",
+                "
+Regras de Rebelde:<br/>
+Rebelde é aquele que compra a licença rebelde e compra equipamentos rebeldes(Vestimenta, Armas, Veículos) e por isso está sujeito a qualquer ação de RP ou de PVP.<br/>
+Com a compra do Treinamento Rebelde, que custa 500.000(Quinhentos mil), o jogador poderá dar respawn nos morros, comprar armamento rebelde, vestimenta rebelde e carros rebeldes.<br/>
+
+3.1 -      O rebelde tem o direito de agir como achar melhor em relação a uma abordagem policial (com sirene e voz de parada), antes de qualquer sinal de abordagem, abrir fogo será considerado RDM<br/>
+3.2 -      O rebelde que foi visto pela polícia e estiver em cidades principais (safe-zones verdes), poderá ser imobilizado pela polícia (Com o uso de Taser e algemas) sem aviso prévio.<br/>
+3.3 -    O REBELDE que for abordado e não cooperar, ou for desrespeitoso, ou estiver em alguma área considerada civil, será abordado, algemado e obrigado a entregar seus itens rebeldes, roupa rebelde, colete rebelde e armas rebeldes ALÉM DE SER MULTADO de até R$ 150,000 (Cento e Cinquenta Mil), e liberado caso não tenha nenhuma pendência com a polícia (não esteja na lista de procurados), caso se recuse a pagar a multa será encaminhado à prisão.<br/>
+3.4 -    O REBELDE que receber voz de parada, vinda de policiais, e fugir para SAFEZONE será abordado com arma de choque e futuramente preso.<br/>
+3.5 -    O REBELDE que foi ressuscitado estará ciente que terá que entregar todo seu armamento para o samu e acompanhar o médico até o hospital. (Exceto se ainda houver algum policial no local, caso haja, segue a regra 1.16.1). <br/>
+3.6 -    O CIVIL que estiver usando equipamento REBELDE, mesmo sem licença rebelde será considerado PERIGOSO, não importando o local onde esteja, será algemado e averiguado, caso resista o policial está autorizado a utilizar força letal, sempre objetivando realizar a prisão.<br/>
+3.8 -    Proibido matar qualquer civil ou policial sem motivo! isto é considerado RDM.<br/>
+3.9 -    Se caso a polícia não ligar a sirene para você ou não fazer algum ato de RP (Tiro de aviso) você não pode atirar nela! mas caso contrario voce pode reagir a abordagem.<br/>
+3.10 -    OffRoad .50 e Blindado (Strider) só deve ser usado em casos de assalto à Reserva Federal.<br/><br/>
+                "
+                ]
+    ];
+
+
+    
+    player createDiaryRecord ["Regras Gerais",
+        [
+        "Regras de Safezones",
+                "
+2.1 -    É Proibido cometer qualquer crime em safe zones. (Roubar, matar, nocautear, algemar, etc) em Safe-zones!<br/>
+2.2 -    Em cidades com Safe zones, as armas devem estar no COLDRE ou nas COSTAS. Com exceção da safe zone VERDE, onde o porte de arma é ilegal<br/>
+2.3 -    Proibido matar a menos de 500(Quinhentos) metros da Safe-Zone ou Camperar Safe-Zones.<br/>
+2.4 -    CIVIS/REBELDES não podem fugir para área rebelde, spawn VIP ou safe-zones durante uma perseguição(Tanto policial ou de outros jogadores), isso foge do roleplay, e, certamente estará sujeito às punições previstas nas regras;<br/>
+2.4.1 -    Caso ocorra de algum jogador fugir para a safe zone, o roleplay pode continuar, ou poderá ser denunciado para staff.<br/>
+2.5 -     Proibido Rebelde em safe zones verdes, o rebelde que for pego pela policia está sujeito a multas, apreensão de equipamentos ou até mesmo preso.<br/>
+2.6 -     Não se pode iniciar qualquer ação de RP dentro da Safe zone. Com exceção da Safe Verde, para policiais.<br/><br/>
+
+                "
+        ]
+    ];
+    
+
+    player createDiaryRecord ["Regras Gerais",
+        [
+            "Safezones",
+                "
+Safezone são áreas no mapa demarcadas com círculos de coloração VERMELHA, VERDE, AZUL e AMARELA. <br/><br/>
+ <br/>
+Safe zones Verdes: Safe zone feita para Civis e Policiais. Proibido roupas, veículos e armas rebelde. Civis devem portar armas legais no coldre. Qualquer delito (nocaute, roubo, disparo) será encaminhado à prisão. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
+ <br/>
+Safe zones Azuis: Safe zone feita para Civis, Policiais e Rebeldes. Proibido portar armas em punho. Qualquer delito (nocaute, roubo, disparo) será encaminhado à prisão. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
+ <br/>
+Safe zones Vermelhas: Safe zone feita para Rebeldes. Proibido COPS fora de ações de RP. Rebeldes e civis com itens ilegais está liberado. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
+ <br/>
+Safe zones amarelas: Safe zone feita para iniciantes Civis. Proibido iniciar qualquer tipo de RP dentro dela.<br/><br/>
+
+                "
+        ]
+    ];
+
+
     
         player createDiaryRecord ["Regras Gerais",
         [
@@ -146,137 +331,20 @@ This section is meant for people doing their own edits to the mission, DO NOT RE
     ];
     
 
-    player createDiaryRecord ["Safezones",
-        [
-        "Regras de Safezones",
-                "
-2.1 -    É Proibido cometer qualquer crime em safe zones. (Roubar, matar, nocautear, algemar, etc) em Safe-zones!<br/>
-2.2 -    Em cidades com Safe zones, as armas devem estar no COLDRE ou nas COSTAS. Com exceção da safe zone VERDE, onde o porte de arma é ilegal<br/>
-2.3 -    Proibido matar a menos de 500(Quinhentos) metros da Safe-Zone ou Camperar Safe-Zones.<br/>
-2.4 -    CIVIS/REBELDES não podem fugir para área rebelde, spawn VIP ou safe-zones durante uma perseguição(Tanto policial ou de outros jogadores), isso foge do roleplay, e, certamente estará sujeito às punições previstas nas regras;<br/>
-2.4.1 -    Caso ocorra de algum jogador fugir para a safe zone, o roleplay pode continuar, ou poderá ser denunciado para staff.<br/>
-2.5 -     Proibido Rebelde em safe zones verdes, o rebelde que for pego pela policia está sujeito a multas, apreensão de equipamentos ou até mesmo preso.<br/>
-2.6 -     Não se pode iniciar qualquer ação de RP dentro da Safe zone. Com exceção da Safe Verde, para policiais.<br/><br/>
 
-                "
-        ]
-    ];
-    
-
-    player createDiaryRecord ["Safezones",
-        [
-            "Safezones",
-                "
-Safezone são áreas no mapa demarcadas com círculos de coloração VERMELHA, VERDE, AZUL e AMARELA. <br/><br/>
- <br/>
-Safe zones Verdes: Safe zone feita para Civis e Policiais. Proibido roupas, veículos e armas rebelde. Civis devem portar armas legais no coldre. Qualquer delito (nocaute, roubo, disparo) será encaminhado à prisão. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
- <br/>
-Safe zones Azuis: Safe zone feita para Civis, Policiais e Rebeldes. Proibido portar armas em punho. Qualquer delito (nocaute, roubo, disparo) será encaminhado à prisão. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
- <br/>
-Safe zones Vermelhas: Safe zone feita para Rebeldes. Proibido COPS fora de ações de RP. Rebeldes e civis com itens ilegais está liberado. RP originado antes da safezone pode ser continuado dentro da safe zone.<br/>
- <br/>
-Safe zones amarelas: Safe zone feita para iniciantes Civis. Proibido iniciar qualquer tipo de RP dentro dela.<br/><br/>
-
-                "
-        ]
-    ];
-    
-    
-
-
-    player createDiaryRecord ["Rebeldes",
-        [
-            "Relações Rebeldes x Rebeldes",
-                "
-3.11-    Um jogador rebelde pode abordar, assaltar, algemar, sequestrar qualquer outro jogador rebelde, desde que esteja seguindo as regras.<br/>
-3.12-    É Rebelde? morreu para rebelde? não chore parceiro... escolheu ser vida louca, então sem choro…<br/><br/>
-                "
-        ]
-    ];
-
-    player createDiaryRecord ["Rebeldes",
-        [
-            "Regras para Rebeldes",
-                "
-Regras de Rebelde:<br/>
-Rebelde é aquele que compra a licença rebelde e compra equipamentos rebeldes(Vestimenta, Armas, Veículos) e por isso está sujeito a qualquer ação de RP ou de PVP.<br/>
-Com a compra do Treinamento Rebelde, que custa 500.000(Quinhentos mil), o jogador poderá dar respawn nos morros, comprar armamento rebelde, vestimenta rebelde e carros rebeldes.<br/>
-
-3.1 -      O rebelde tem o direito de agir como achar melhor em relação a uma abordagem policial (com sirene e voz de parada), antes de qualquer sinal de abordagem, abrir fogo será considerado RDM<br/>
-3.2 -      O rebelde que foi visto pela polícia e estiver em cidades principais (safe-zones verdes), poderá ser imobilizado pela polícia (Com o uso de Taser e algemas) sem aviso prévio.<br/>
-3.3 -    O REBELDE que for abordado e não cooperar, ou for desrespeitoso, ou estiver em alguma área considerada civil, será abordado, algemado e obrigado a entregar seus itens rebeldes, roupa rebelde, colete rebelde e armas rebeldes ALÉM DE SER MULTADO de até R$ 150,000 (Cento e Cinquenta Mil), e liberado caso não tenha nenhuma pendência com a polícia (não esteja na lista de procurados), caso se recuse a pagar a multa será encaminhado à prisão.<br/>
-3.4 -    O REBELDE que receber voz de parada, vinda de policiais, e fugir para SAFEZONE será abordado com arma de choque e futuramente preso.<br/>
-3.5 -    O REBELDE que foi ressuscitado estará ciente que terá que entregar todo seu armamento para o samu e acompanhar o médico até o hospital. (Exceto se ainda houver algum policial no local, caso haja, segue a regra 1.16.1). <br/>
-3.6 -    O CIVIL que estiver usando equipamento REBELDE, mesmo sem licença rebelde será considerado PERIGOSO, não importando o local onde esteja, será algemado e averiguado, caso resista o policial está autorizado a utilizar força letal, sempre objetivando realizar a prisão.<br/>
-3.8 -    Proibido matar qualquer civil ou policial sem motivo! isto é considerado RDM.<br/>
-3.9 -    Se caso a polícia não ligar a sirene para você ou não fazer algum ato de RP (Tiro de aviso) você não pode atirar nela! mas caso contrario voce pode reagir a abordagem.<br/>
-3.10 -    OffRoad .50 e Blindado (Strider) só deve ser usado em casos de assalto à Reserva Federal.<br/><br/>
-                "
-                ]
-    ];
 
 
     
 
 
-    player createDiaryRecord ["Policiais",
-        [
-            "Regras de COP",
-                "
-Policiais são aqueles que tem o objetivo de deixar Altis mais seguro, apreendendo jogadores, veículos, drogas e armamentos ilegais.<br/>
-O policial deve sempre prezar a vida dos civis.<br/>
-O Policial tem acesso a armamento letal, e armamento não letal. <br/>
-O policial deve sempre tentar conversar com o jogador e somente em último caso deverá utilizar o armamento não letal ou armamento letal em casos onde a vida de outros estão em risco.<br/><br/>
 
-4.1 -    Nenhum cop está autorizado a logar como civil, salvo autorizado pelo Coronel da corporação.<br/>
-4.2 -    Respeitar todos os jogadores, agir cordialmente e educadamente respeitando as abordagens conforme orientado por seu superiores.<br/>
-4.3 -    Após a morte em confronto de PvP contra rebeldes o policial somente poderá voltar após 15 MINUTOS!<br/>
-4.3.1 -    Em casos de reserva o policial poderá voltar em 10 minutos.<br/>
-4.4 -    O Blindado, somente poderá ser utilizado durante assalto a reserva federal e sob comando de oficial superior com patente mínima de Sargento;<br/>
-4.5 -    Apenas 2 aeronaves policiais no ar são permitidas. 1 Helicóptero já é o suficiente, subir outro apenas com autorização do superior.<br/>
-4.6 -    Ao capturar um criminoso, o policial deverá levá-lo imediatamente sem demora para a DP, Delegacia mais próxima FORA de Safe-Zones, onde será explicado tudo ao indivíduo. Essa ação se dá para evitar emboscadas, principalmente quando faz parte de uma Gangue.<br/>
-4.7 -    Em casos de PvP, tiroteio onde os Policiais ficam sozinhos com risco de vida sem possibilidades de levar alguém preso, eles têm a autonomia de  algemar sem avisar qualquer um que estiver próximo da operação. <br/>
-4.8 -    Em caso de ausência, o policial pode ficar no máximo 1 semana fora (sem aviso da ausência), caso contrário, poderá ser demitido.<br/>
-4.9 -    É extremamente proibido cop descer na sala de samu ou civil.<br/>
-4.10 -    Armamento letal só poderá ser utilizado quando a vida de Policiais ou de terceiros estiverem em risco ou caso exista alguma ação de roleplay onde a arma letal e necessária. A força letal deve ser utilizada somente em ÚLTIMO CASO!<br/>
-4.11 -    Armamento não letal poderá ser usado em abordagens onde o jogador está desarmado e tente empreender fuga.<br/>
-4.12 -    Em casos de sequestro o policial deverá responder o sequestrador em menos de 5 minutos, e sair de qualquer ação de roleplay para negociar. (Para saber mais sobre os deveres de um policial, vá para Regras de Sequestro e Assalto).<br/>
-4.13 -    A prisão só deverá ser aplicada caso o jogador esteja procurado pela polícia, ou esteja desacatando policiais, farmando drogas ou após uma ação de roleplay. Caso contrário uma multa deverá ser aplicada.<br/>
-4.14 -    Multas devem ter um valor máximo de 200.000(Duzentos mil).<br/>
-4.15 -    A retirada do A-143 Buzzard está autorizada somente para operações com XYAN ou BLACKFISH. Qualquer outra aeronave o uso do A-143 Buzzard está proibida.<br/>
-4.15.1 -    Deve se considerar que deverá ser zelada a vida e os bens materiais de todos os envolvidos, portanto o Policial deverá efetuar disparos a fim de FORÇAR um pouso e somente em últimos casos, após muitos avisos e disparos com tentativa de forçar o pouso da aeronave, a mesma deverá ser abatida.<br/><br/>
-                "
-        ]
-    ];
-
-    player createDiaryRecord ["SAMU",
-        [
-            "SAMU",
-                "
-O Samu dentro do servidor irá exercer a função de médico, bombeiro e mecânico. Qualquer problema que algum jogador venha a ter seja ele por falhas mecânicas no carro ou perda de vida, o SAMU deve sempre estar de prontidão para atender todos.<br/>
-O Equipamento do SAMU consistem em Desfibrilador e Kit de reparos, sendo seu principal meio de locomoção o Helicóptero.<br/><br/>
-
-5.1 -    SAMU após efetuar o resgate, pode dar carona ao jogador até o hospital mais próximo.<br/>
-5.2 -    SAMU não poderá transportar nenhum item em seu helicóptero.<br/>
-5.3 -    Enquanto não houverem chamamos O SAMU deverá permanecer nos hospitais, ou nas cidade principais(Athira, Chapecó ou Kavala) dando suporte aos jogadores.<br/>
-5.4 -    SAMU não está autorizada a reviver ninguém nas imediações da reserva federal durante PVP de roubo a reserva.<br/>
-5.5 -    A prioridade de reviver é sempre do Policial.<br/>
-5.6 -    Em casos de Role-Play, o SAMU que tentar ressuscitar um jogador e receber avisos via celular ou por tiros, tanto vindo de rebeldes quanto de COPs, deverá se afastar e aguardar o RP acabar, pois está em zona de conflito;<br/>
-5.6.1 -    O Samu após receber aviso, está sujeito a morrer caso tente reviver o jogador no meio do combate.<br/>
-5.7 -    O Policial que foi ressuscitado após morrer em “acidente” terá o direito de escolher se quer ou não ser levado ao hospital.<br/>
-5.8 -    O Policial que foi ressuscitado após morrer em “confronto” é obrigatório acompanhar o samu até o hospital!<br/>
-5.9 -    Qualquer jogador que for morto em PVP e revivido pelo SAMU terá suas armas apreendidas!<br/>
-5.9.1 -    O Samu pode dispensar a apreensão de arma em caso de acidentes com veículos.<br/>
-                "
-        ]
-    ];
     
      player createDiaryRecord ["Assalto e Sequestro",
         [
         "Regras de Assalto a Reserva",
                 "
-6.11 -    O jogador que fizer o assalto a reserva próximo ao restart não será ressarcido.<br/>
-6.12 -    O jogador não pode levar o ouro roubado para casa ou para a favela.<br/>
+7.11 -    O jogador que fizer o assalto a reserva próximo ao restart não será ressarcido.<br/>
+7.12 -    O jogador não pode levar o ouro roubado para casa ou para a favela.<br/>
 
 
                 "
@@ -289,19 +357,19 @@ O Equipamento do SAMU consistem em Desfibrilador e Kit de reparos, sendo seu pri
         [
         "Regras de Sequestro",
                 "
-6.1 -    É preciso ter um número mínimo de 3 policiais online para fazer uma negociação.<br/>
-6.1.1 -    Caso seja um sequestro de Policial, é preciso ter no mínimo 4 policiais (3 para negociação).<br/>
-6.2 -    Após 5 minutos sem resposta de policiais os sequestradores estão autorizados a matar o jogador sequestrado.<br/>
-6.3 -    É extremamente proibido qualquer tipo de comunicação entre o sequestrando e demais jogadores. TeamSpeak, Side Channel, Group Channel, entre outros.<br/>
-6.3.1 -    O único meio de comunicação liberado para o jogador sequestrado é o direct communication para falar com os sequestradores.<br/>
-6.4 -    É extremamente proibido olhar a marcação no mapa(Criada pela gangue ou pelo mapa policial[No sequestro policial]) para ir resgatar o jogador sequestrado.<br/>
-6.5 -    Na hora da negociação o Policial deverá avisar a forma como chegará, seja de helicóptero, carro com sirene desligada ou ligada.<br/>
-6.6 -    Qualquer uma das partes pode reagir a qualquer momento (Dentro do RolePlay).<br/>
-6.7 -    O sequestro só termina quando o sequestrador depositar o dinheiro, ou o jogador sequestrado morre.<br/>
-6.8 -    É proibido negociação pelo Ts3. A negociação só pode ser feita dentro do servidor usando o celular!<br/>
-6.9 -    O dinheiro não pode ser transferido por conta bancária, só pode entregar o dinheiro para o sequestrador por mão a mão. <br/>
-6.10 -    A utilização de um veículo como cativeiro não é permitida, o veículo só pode ser usado para movimentação do sequestrado até o cativeiro.<br/>
-6.10.1 -    A Favela e Bases militares não podem ser usadas como cativeiro.<br/>
+7.1 -    É preciso ter um número mínimo de 3 policiais online para fazer uma negociação.<br/>
+7.1.1 -    Caso seja um sequestro de Policial, é preciso ter no mínimo 4 policiais (3 para negociação).<br/>
+7.2 -    Após 5 minutos sem resposta de policiais os sequestradores estão autorizados a matar o jogador sequestrado.<br/>
+7.3 -    É extremamente proibido qualquer tipo de comunicação entre o sequestrando e demais jogadores. TeamSpeak, Side Channel, Group Channel, entre outros.<br/>
+7.3.1 -    O único meio de comunicação liberado para o jogador sequestrado é o direct communication para falar com os sequestradores.<br/>
+7.4 -    É extremamente proibido olhar a marcação no mapa(Criada pela gangue ou pelo mapa policial[No sequestro policial]) para ir resgatar o jogador sequestrado.<br/>
+7.5 -    Na hora da negociação o Policial deverá avisar a forma como chegará, seja de helicóptero, carro com sirene desligada ou ligada.<br/>
+7.6 -    Qualquer uma das partes pode reagir a qualquer momento (Dentro do RolePlay).<br/>
+7.7 -    O sequestro só termina quando o sequestrador depositar o dinheiro, ou o jogador sequestrado morre.<br/>
+7.8 -    É proibido negociação pelo Ts3. A negociação só pode ser feita dentro do servidor usando o celular!<br/>
+7.9 -    O dinheiro não pode ser transferido por conta bancária, só pode entregar o dinheiro para o sequestrador por mão a mão. <br/>
+7.10 -    A utilização de um veículo como cativeiro não é permitida, o veículo só pode ser usado para movimentação do sequestrado até o cativeiro.<br/>
+7.10.1 -    A Favela e Bases militares não podem ser usadas como cativeiro.<br/>
 
 
                 "
@@ -338,25 +406,25 @@ O valor mínimo e máximo pago pela a COP para o resgate de civis varia entre 30
         [
             "Regras nas Favelas",
                 "
-7.1 -     A gangue dona da favela está dispensado de aguardar 10 minutos ( para voltar a ação em caso de defesa de sua favela.<br/>
+8.1 -     A gangue dona da favela está dispensado de aguardar 10 minutos ( para voltar a ação em caso de defesa de sua favela.<br/>
 
-7.1.1 -    Atacantes não possuem o mesmo direito, ao morrer, deverão respeitar a Regra da Nova vida e não retornar ao mesmo local em menos de 15 minutos.<br/>
+8.1.1 -    Atacantes não possuem o mesmo direito, ao morrer, deverão respeitar a Regra da Nova vida e não retornar ao mesmo local em menos de 15 minutos.<br/>
 
-7.2 -    Não é autorizado uso de blindados para defesa ou ataque á favelas<br/>
+8.2 -    Não é autorizado uso de blindados para defesa ou ataque á favelas<br/>
 
-7.3 -    Cops são proibidos de fazer operações dentro de favelas.<br/>
+8.3 -    Cops são proibidos de fazer operações dentro de favelas.<br/>
 
-7.4 -    Cops são liberados para perseguir jogadores que entrarem em a suas favelas provenientes de ação de RP (Já em perseguição anteriormente).<br/>
+8.4 -    Cops são liberados para perseguir jogadores que entrarem em a suas favelas provenientes de ação de RP (Já em perseguição anteriormente).<br/>
 
-7.4.1 -    O dono deverá estar ciente de que o policial poderá entrar na favela e realizar a operação ( Prendendo, Matando, e vasculhando as casas da favela) <br/>
+8.4.1 -    O dono deverá estar ciente de que o policial poderá entrar na favela e realizar a operação ( Prendendo, Matando, e vasculhando as casas da favela) <br/>
 
-7.5 -    Em caso de uma favela ILEGAL, os POLICIAIS são proibidos de atender pedidos de ajuda para defender a mesma.<br/>
+8.5 -    Em caso de uma favela ILEGAL, os POLICIAIS são proibidos de atender pedidos de ajuda para defender a mesma.<br/>
 
-7.5.1 -    Em caso de uma favela Legal, os policiais estão liberados para ajudar a defender a mesma, porém a defesa de uma favela não será dada como prioridade pela corporação.<br/>
+8.5.1 -    Em caso de uma favela Legal, os policiais estão liberados para ajudar a defender a mesma, porém a defesa de uma favela não será dada como prioridade pela corporação.<br/>
 
-7.6 -    Em caso de sequestros, é proibido que a vítima seja levada a qualquer favela, pois jogadores podem logar e atrapalhar o roleplay<br/>
+8.6 -    Em caso de sequestros, é proibido que a vítima seja levada a qualquer favela, pois jogadores podem logar e atrapalhar o roleplay<br/>
 
-7.7 -    ATENÇÃO! É PROIBIDO comprar CASAS destinadas aos DOADORES e membros da GANGUE a qual a favela pertence! Ao ser constatado que algum jogador comprou a casa destinada a membros da gangue da favela, o mesmo receberá banimento de 3 dias do servidor e terá todas as suas casas deletadas.<br/>
+8.7 -    ATENÇÃO! É PROIBIDO comprar CASAS destinadas aos DOADORES e membros da GANGUE a qual a favela pertence! Ao ser constatado que algum jogador comprou a casa destinada a membros da gangue da favela, o mesmo receberá banimento de 3 dias do servidor e terá todas as suas casas deletadas.<br/>
 
                 "
         ]
@@ -369,17 +437,17 @@ O valor mínimo e máximo pago pela a COP para o resgate de civis varia entre 30
         "Regras do Funcionário",
                 "
  
-8.9 -    Funcionários com veículos próprios poderão utilizar seus veículos, e a taxa para a empresa é de 15% do lucro final.<br/>
+9.9 -    Funcionários com veículos próprios poderão utilizar seus veículos, e a taxa para a empresa é de 15% do lucro final.<br/>
  
-8.10 -    Funcionários com veículos cedidos pela Empresa, deverão pagar OBRIGATORIAMENTE entre 30% e 40% do valor final do lucro para o empregador, como taxa de uso.<br/>
+9.10 -    Funcionários com veículos cedidos pela Empresa, deverão pagar OBRIGATORIAMENTE entre 30% e 40% do valor final do lucro para o empregador, como taxa de uso.<br/>
  
-8.11 -    Cobrar valor abaixo será enquadrado como competição desleal aos concorrentes e estará sujeito a perda da empresa.<br/>
+9.11 -    Cobrar valor abaixo será enquadrado como competição desleal aos concorrentes e estará sujeito a perda da empresa.<br/>
 
-8.12 -    O recolhimento da porcentagem deverá ocorrer após a venda dos produtos.<br/>
+9.12 -    O recolhimento da porcentagem deverá ocorrer após a venda dos produtos.<br/>
 
-8.13 -    O não pagamento da taxa ao empresário, será considerado crime e entrará para a lista de procurados da polícia.<br/>
+9.13 -    O não pagamento da taxa ao empresário, será considerado crime e entrará para a lista de procurados da polícia.<br/>
 
-8.14 -    É proibido levar um veículo de uma empresa para desmanche.<br/><br/>
+9.14 -    É proibido levar um veículo de uma empresa para desmanche.<br/><br/>
 
 
                 "
@@ -400,21 +468,21 @@ Empresas são vendidas por uma valor mínimo de 4.000.000 (Quatro Milhões).<br/
 
 O salário do funcionário, está em função da porcentagem imposta pelo empregador. Essa porcentagem deverá ser paga no final da venda do farm.<br/><br/>
 
-8.1 -    É proibido que o dono frequente a empresa trajando de uniformes e equipamentos rebeldes. Atentar-se que não é proibido ser REBELDE, apenas frequentar a área de trabalho vestido como tal.<br/>
+9.1 -    É proibido que o dono frequente a empresa trajando de uniformes e equipamentos rebeldes. Atentar-se que não é proibido ser REBELDE, apenas frequentar a área de trabalho vestido como tal.<br/>
 
-8.2 -    O empresário deverá criar uma grupo com o nome de sua empresa respectiva, igual consta nos nomes em mapas e deverá adicionar seus funcionários a este grupo obrigatoriamente.<br/>
+9.2 -    O empresário deverá criar uma grupo com o nome de sua empresa respectiva, igual consta nos nomes em mapas e deverá adicionar seus funcionários a este grupo obrigatoriamente.<br/>
  
-8.3 -    Gangues não podem utilizar o local da empresa para impedir civis de trabalharem.<br/>
+9.3 -    Gangues não podem utilizar o local da empresa para impedir civis de trabalharem.<br/>
 
-8.4 -    Proprietários que permanecerem muito tempo ausentes, com a empresa fechada, sem outro encarregado, serão desligados e a mesma passará para outro empresário.<br/>
+9.4 -    Proprietários que permanecerem muito tempo ausentes, com a empresa fechada, sem outro encarregado, serão desligados e a mesma passará para outro empresário.<br/>
  
-8.5 -    O empregador não deve recusar trabalho a NENHUM civil que solicite trabalhar em sua empresa.<br/>
+9.5 -    O empregador não deve recusar trabalho a NENHUM civil que solicite trabalhar em sua empresa.<br/>
  
-8.6 -    O proprietário de uma empresa, é obrigado a pagar o contrato com a BRINKS de $100.000,00.<br/>
+9.6 -    O proprietário de uma empresa, é obrigado a pagar o contrato com a BRINKS de $100.000,00.<br/>
  
-8.7 -    Somente será considerado um funcionário, aquele que tiver no grupo com o nome da empresa.<br/>
+9.7 -    Somente será considerado um funcionário, aquele que tiver no grupo com o nome da empresa.<br/>
 
-8.8 -    O empregador deverá fornecer um veículo e garantir a segurança do funcionário por meio da BRINKS (vide contrato de $100.000,00 por dia).<br/><br/>
+9.8 -    O empregador deverá fornecer um veículo e garantir a segurança do funcionário por meio da BRINKS (vide contrato de $100.000,00 por dia).<br/><br/>
 
 
                 "
@@ -427,35 +495,35 @@ O salário do funcionário, está em função da porcentagem imposta pelo empreg
         [
         "Regras da BRINKS",
                 "
-9.1 -    A BRINKS está proibida, em qualquer circunstância, de combater ou entrar em confronto com as Polícias Militares e/ou Federais.<br/>
+10.1 -    A BRINKS está proibida, em qualquer circunstância, de combater ou entrar em confronto com as Polícias Militares e/ou Federais.<br/>
 
-9.1.1 -    Caso haja confronto havendo letalidade policial, o mesmo deverá ressarcir os equipamentos e pagar mais 100.000 (Cem mil) para a vítima como indenização.<br/>
+10.1.1 -    Caso haja confronto havendo letalidade policial, o mesmo deverá ressarcir os equipamentos e pagar mais 100.000 (Cem mil) para a vítima como indenização.<br/>
  
-9.2 -    Os membros da BRINKS são proibidos de cometer QUALQUER tipo de atitude ilegal.<br/>
+10.2 -    Os membros da BRINKS são proibidos de cometer QUALQUER tipo de atitude ilegal.<br/>
  
-9.3 -    A empresa deve apoiar o contratante do início ao fim de seu farm, a empresa NÃO PODE ATENDER pedidos de socorro contra assaltos que se iniciarem SEM o contrato, esta função é da polícia.<br/>
+10.3 -    A empresa deve apoiar o contratante do início ao fim de seu farm, a empresa NÃO PODE ATENDER pedidos de socorro contra assaltos que se iniciarem SEM o contrato, esta função é da polícia.<br/>
  
-9.4 -    A empresa é proibida de fazer patrulhas e combater forças terroristas sem estar exercendo escoltas armadas.<br/>
+10.4 -    A empresa é proibida de fazer patrulhas e combater forças terroristas sem estar exercendo escoltas armadas.<br/>
  
-9.5 -    A empresa deve priorizar o trabalho contratado, sendo assim todas as forças devem ser usadas para honrar o compromisso em defender o contratante, SABENDO analisar e sair de uma situação na qual prejudicaria o contratante.<br/>
+10.5 -    A empresa deve priorizar o trabalho contratado, sendo assim todas as forças devem ser usadas para honrar o compromisso em defender o contratante, SABENDO analisar e sair de uma situação na qual prejudicaria o contratante.<br/>
  
-9.6 -    A empresa não é uma POLICIA ALTERNATIVA, a empresa não tem funções de caçar bandidos ou não deve ser contratada como mercenários.(O único papel da empresa é ESCOLTAS e rastreamento e recuperação de VEÍCULOS roubados.)<br/>
+10.6 -    A empresa não é uma POLICIA ALTERNATIVA, a empresa não tem funções de caçar bandidos ou não deve ser contratada como mercenários.(O único papel da empresa é ESCOLTAS e rastreamento e recuperação de VEÍCULOS roubados.)<br/>
  
-9.7 -    Para contratar um serviço de rastreamento, solicite a um funcionário e ele irá colocar um GPS CarSystem em seu veículo. Desta forma você estará sendo monitorado pela empresa, e caso haja algum problema, ela está autorizada a ir atender você para prestar socorro.<br/>
+10.7 -    Para contratar um serviço de rastreamento, solicite a um funcionário e ele irá colocar um GPS CarSystem em seu veículo. Desta forma você estará sendo monitorado pela empresa, e caso haja algum problema, ela está autorizada a ir atender você para prestar socorro.<br/>
  
-9.8 -    O contratante de um serviço de ESCOLTA receberá uma MX 6.5mm. No fim do contrato, a arma será DEVOLVIDA a corporação. (O custo do equipamento ja está incluso no contrato)<br/>
+10.8 -    O contratante de um serviço de ESCOLTA receberá uma MX 6.5mm. No fim do contrato, a arma será DEVOLVIDA a corporação. (O custo do equipamento ja está incluso no contrato)<br/>
  
-9.9 -    A conclusão do serviço da BRINKS só termina quando for concluído o farm, morte do contratante ou morte dos agentes de escolta.<br/>
+10.9 -    A conclusão do serviço da BRINKS só termina quando for concluído o farm, morte do contratante ou morte dos agentes de escolta.<br/>
  
-9.10 -    A BRINKS é proibida de invadir favelas e participar de guerras entre gangues.<br/>
+10.10 -    A BRINKS é proibida de invadir favelas e participar de guerras entre gangues.<br/>
  
-9.11 -    A BRINKS é proibida de trabalhar para rebeldes.<br/>
+10.11 -    A BRINKS é proibida de trabalhar para rebeldes.<br/>
  
-9.12 -    Empresas: A BRINKS deverá dar prioridade a ocorrências envolvendo empresários e seus funcionários.<br/>
+10.12 -    Empresas: A BRINKS deverá dar prioridade a ocorrências envolvendo empresários e seus funcionários.<br/>
  
-9.13 -    A equipe tem a obrigação, devido ao contrato vitalício com as empresas, de fazer a escolta nos trabalhos e rastreamento de veículos das empresas, criando logística para atender toda a demanda.<br/>
+10.13 -    A equipe tem a obrigação, devido ao contrato vitalício com as empresas, de fazer a escolta nos trabalhos e rastreamento de veículos das empresas, criando logística para atender toda a demanda.<br/>
  
-9.14 -    A BRINKS é proibida de usar veículo BLINDADO IFRIT, exceto em casos de eventos organizados com a administração.<br/><br/>
+10.14 -    A BRINKS é proibida de usar veículo BLINDADO IFRIT, exceto em casos de eventos organizados com a administração.<br/><br/>
 
 
 
@@ -489,6 +557,9 @@ O pagamento será feito em uma entrada de 50%, e o restante sendo pago ao final 
                 "
         ]
     ];
+    
+
+
     
     
 
