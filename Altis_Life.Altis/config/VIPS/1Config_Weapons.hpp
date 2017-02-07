@@ -556,7 +556,7 @@ class WeaponShops {
             { "Chemlight_green", "", 10, -1, "" },
             { "Chemlight_blue", "", 10, -1, "" },
             { "SmokeShellRed", "", 10, 3000, "" },
-            { "HandGrenade_Stone", "", 10, -1, "call life_medlevel >= 2" }
+            { "HandGrenade_Stone", "", 10, -1, "call life_mediclevel >= 2" }
             
         };
         mags[] = {};
