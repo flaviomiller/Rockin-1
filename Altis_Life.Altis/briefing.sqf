@@ -4,7 +4,7 @@ if (player diarySubjectExists "controls") exitWith {};
 player createDiarySubject ["Novidades","Novidades"];
 player createDiarySubject ["credits","Credits"];
 //player createDiarySubject ["changelog","Change Log"];
-//player createDiarySubject ["Regras Gerais","Regras Gerais"];
+player createDiarySubject ["Regras Gerais","Regras Gerais"];
 //player createDiarySubject ["Safezones","Safezones"];
 //player createDiarySubject ["Rebeldes","Rebeldes"];
 //player createDiarySubject ["Policiais","Regras de COP"];
