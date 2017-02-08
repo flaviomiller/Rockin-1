@@ -76,6 +76,7 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};		
 		class playSound {};
+		class revokeDriverLicense
     };
 	
     class GPS {
@@ -120,6 +121,8 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class passeportCiv {};  
+        class civPasseport {}
     };
 
     class Config {
@@ -159,6 +162,7 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+		class copSiren2 {};
     };
 
     class Dialog_Controls {

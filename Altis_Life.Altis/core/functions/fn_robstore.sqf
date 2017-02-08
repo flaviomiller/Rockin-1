@@ -24,6 +24,7 @@ _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
 if(_chance >= 10) then {[1,format["ALARM! - Posto de Gasolina: %1 está sendo assaltado!", _shop]] remoteExec ["life_fnc_broadcast",west]; };
+[_shop,"robberyalarm"] remoteExec ["life_fnc_say3D",0];
 
 _cops = (west countSide playableUnits);
 if(_cops < 3) exitWith{hint "Não há policiais suficientes para o roubo!";};

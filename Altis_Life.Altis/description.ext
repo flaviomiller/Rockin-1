@@ -70,6 +70,13 @@ class CfgSounds {
         titles[] = {};
     };
 
+		class robberyalarm
+    {
+        name = "robberyalarm";
+        sound[] = {"\sounds\robberyalarm.ogg",2.0, 1};
+        titles[] = {};
+    };
+	
     class tazerSound {
         name = "tazerSound";
         sound[] = {"\sounds\tazer.ogg", 0.25, 1};
@@ -82,6 +89,12 @@ class CfgSounds {
         titles[] = {};
     };
 
+		class Yelp {
+		name = "yelp";
+		sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+		titles[] = {};		
+		};
+	
     class mining {
         name = "mining";
         sound[] = {"\sounds\mining.ogg", 1.0, 1};

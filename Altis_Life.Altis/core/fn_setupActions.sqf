@@ -16,7 +16,9 @@ switch (playerSide) do {
         life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
         !isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && animationState cursorObject isEqualTo "Incapacitated" && !(cursorObject getVariable ["robbed",false]) ']];
         //Gang
-        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capture Gang Location</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
+        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Esconderijo</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
+		//Passport 
+	life_actions = life_actions + [player addAction["<t color='#00FF00'>Apresentar a Identidade</t>",life_fnc_civPasseport,"",1,false,true,"",' playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" ']];
     };
 	case west: {
 	    //CopSeizeObjects
@@ -29,7 +31,7 @@ switch (playerSide) do {
 		//Barriers
 		player addaction ["Barreiras",life_fnc_barrier,[""],0,false,true,"","vehicle player isEqualTo player and BarrierOpen isEqualTo 0"];
         //Gang
-        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capture Gang Location</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
+        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Esconderijo</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
     };
 	case independent: {
 	    //Medenter

@@ -14,14 +14,14 @@ class osefStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 1000;
-			x = safezoneX + safezoneW - 1.7;
-			y = safezoneY + safezoneH - 0.04;
+			x = safezoneX + safezoneW - 1;
+			y = safezoneY + safezoneH - 0.08;
 			w = 1;
 			h = 0.04;
 			shadow = 2;
 			colorBackground[] = { 1, 0.3, 0, 0.0 };
 			font = "PuristaSemibold";
-			size = 0.03;
+			size = 0.035;
 			type = 13;
 			style = 1;
 			text="Carregando informações do servidor, por favor aguarde...";

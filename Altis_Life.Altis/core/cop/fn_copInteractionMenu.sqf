@@ -83,6 +83,11 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDial
 _Btn8 ctrlSetText localize "STR_pInAct_Seize";
 _Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
 
+//Revoke License Button
+_Btn9 ctrlSetText localize "STR_pInAct_RevokeLicense";
+_Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_revokeDriverLicense; closeDialog 0;";
+ 
+
 if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 {
