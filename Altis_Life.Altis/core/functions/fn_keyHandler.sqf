@@ -257,7 +257,30 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
     };
 
 	//Z Key Segunda Sirene
-	case 59: {
+	case 4: {
+        if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+           [] spawn {
+               life_siren2_active = true;
+                sleep 1.2;
+                life_siren2_active = false;
+				
+            };
+				
+            _veh = vehicle player;
+            if (isNil {_veh getVariable "siren3"}) then {_veh setVariable ["siren3",false,true];};
+            if ((_veh getVariable "siren2")) then {
+                titleText ["Sirene de Perseguição OFF","PLAIN"];
+                _veh setVariable["siren3",false,true];
+            } else {
+                titleText ["Sirene de Perseguição ON","PLAIN"];
+                _veh setVariable["siren3",true,true];
+				   [_veh] remoteExec ["life_fnc_copsiren2",RCLIENT];
+                };
+            };
+        };	
+	
+	//Z Key Segunda Sirene
+	case 2: {
         if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
            [] spawn {
                life_siren2_active = true;
@@ -280,7 +303,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
         };
 	
     //F Key
-    case 33: {
+    case 3: {
         if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
             [] spawn {
                 life_siren_active = true;
