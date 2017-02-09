@@ -45,7 +45,7 @@
 		deleteVehicle (_barrier select 0);
 		_barrier = position player nearObjects ["RoadBarrier_small_F", 3];
 		deleteVehicle (_barrier select 0);
-		_barrier = position player nearObjects ["Land_BarGate_F", 8];
+        _barrier = position player nearObjects ["Land_PortableLight_double_F", 8];
 		deleteVehicle (_barrier select 0);	
 	};
 	

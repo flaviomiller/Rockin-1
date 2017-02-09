@@ -70,6 +70,17 @@ switch (true) do {
     case (_item isEqualTo "gpstracker"): { // added
 	[cursorTarget] spawn life_fnc_gpsTracker;
     };
+	
+	case (_item isEqualto "kidney"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			player setVariable["missingOrgan",false,true];
+			life_thirst = 100;
+			life_hunger = 100;
+			player setFatigue .5;
+		};
+	};
 
     case (_item isEqualTo "fuelEmpty"): {
         [] spawn life_fnc_jerryCanRefuel;

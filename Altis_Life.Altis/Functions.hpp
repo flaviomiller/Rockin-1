@@ -76,7 +76,7 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};		
 		class playSound {};
-		class revokeDriverLicense
+		class revokeDriverLicense {};
     };
 	
     class GPS {
@@ -122,7 +122,8 @@ class Life_Client_Core {
         class robReceive {};
         class tazed {};
 		class passeportCiv {};  
-        class civPasseport {}
+        class civPasseport {};
+		class hasOrgan {};
     };
 
     class Config {

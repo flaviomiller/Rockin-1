@@ -181,7 +181,7 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
 			{ "O_Heli_Transport_04_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 2" }
+            { "O_Heli_Light_02_unarmed_F", "call life_medlevel >= 2" }
         };
     };
 
