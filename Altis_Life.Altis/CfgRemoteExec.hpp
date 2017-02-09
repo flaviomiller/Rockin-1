@@ -25,6 +25,7 @@ class CfgRemoteExec {
         F(life_fnc_copSearch,CLIENT)
         F(life_fnc_copSiren,CLIENT)
 		F(life_fnc_copSiren2,CLIENT)
+		F(life_fnc_copSiren3,CLIENT)
         F(life_fnc_freezePlayer,CLIENT)
         F(life_fnc_gangCreated,CLIENT)
         F(life_fnc_gangDisbanded,CLIENT)
