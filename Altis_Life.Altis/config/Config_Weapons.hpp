@@ -184,7 +184,7 @@ class WeaponShops {
         name = "Polishop Premium Store";
         side = "civ";
         license = "";
-        conditions = "";
+        conditions = "call life_donorlevel isEqualTo 1";
         items[] = {
             { "Binocular", "", 150, -1 },
             { "ItemGPS", "", 100, 45 },
@@ -304,7 +304,7 @@ class WeaponShops {
     class Premium {
         name = "Premium Store";
         side = "civ";
-        conditions = "license_civ_rebel";
+        conditions = "call life_donorlevel isEqualTo 1";
         items[] = {
 			{ "Binocular", "", 150, -1, "" },
             { "ItemGPS", "", 100, -1, "" },
@@ -421,7 +421,7 @@ class WeaponShops {
     class PremiumCop {
         name = "Premium Store";
         side = "cop";
-        conditions = "";
+        conditions = "call life_donorlevel isEqualTo 1";
         items[] = {
 			{ "Binocular", "", 150, -1, "" },
             { "ItemGPS", "", 100, -1, "" },

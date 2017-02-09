@@ -18,6 +18,10 @@ if (_veh isEqualTo "B_Boat_Armed_01_minigun_F") then {
     _vehicle removeMagazinesTurret ["200Rnd_40mm_G_belt",[0]];
 };
 
+if (_veh isEqualTo "B_Heli_Transport_01_F") then {
+    _vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[0]];
+};
+
 if (_veh isEqualTo "B_APC_Wheeled_01_cannon_F") then {
     _vehicle removeMagazinesTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
     _vehicle removeMagazinesTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];

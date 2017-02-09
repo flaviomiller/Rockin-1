@@ -43,7 +43,7 @@ class CarShops {
 	
 	class Premium_Auto {
         side = "civ";
-        conditions = "";
+        conditions = "call life_donorlevel isEqualTo 1";
         vehicles[] = {
 			{ "B_Quadbike_01_F", , "" },
             { "C_Hatchback_01_F", , "" },
@@ -70,7 +70,7 @@ class CarShops {
 	
 	class Premium_Air {
         side = "civ";
-        conditions = "";
+        conditions = "call life_donorlevel isEqualTo 1";
         vehicles[] = {
             { "C_Heli_Light_01_civil_F", , "" },
             { "B_Heli_Light_01_F", , "" },
@@ -88,7 +88,7 @@ class CarShops {
 	
     class Premium_Air2 {
         side = "civ";
-        conditions = "";
+        conditions = "call life_donorlevel isEqualTo 1";
         vehicles[] = {
             { "C_Plane_Civil_01_F", , "" },
             { "I_Plane_Fighter_03_CAS_F", , "" },
@@ -201,7 +201,8 @@ class CarShops {
         vehicles[] = {
 			{ "I_Plane_Fighter_03_AA_F", "call life_coplevel >= 13" },
             { "B_Heli_Light_01_F", "call life_coplevel >= 13" },
-            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 13" }
+            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 13" },
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 13" }
         };
     };
 
@@ -419,7 +420,12 @@ class LifeCfgVehicles {
         vItemSpace = 200;
         conditions = "license_cop_cAir";
         price = 60000;
-        textures[] = {};
+        textures[] = {
+            { "PM SP", "cop", {
+                "textures\Veiculos\Policiais\COP_GH_01.paa",
+                "textures\Veiculos\Policiais\COP_GH_02.paa"
+            }, "" }
+        };
     };
 
     class B_MRAP_01_hmg_F {
@@ -564,6 +570,9 @@ class LifeCfgVehicles {
             }, "" },
             { "SAMU", "med", {
                 "textures\Veiculos\Medicos\medic_offroad.paa"
+            }, "" },
+            { "C.E.T", "cop", {
+                "textures\Veiculos\Policiais\CET_OFF.paa"
             }, "" },
             { "PM RJ", "cop", {
                 "textures\Veiculos\Policiais\POLICE_OFF_RJ.paa"
@@ -969,6 +978,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Policia Federal", "cop", {
                 "textures\Veiculos\Policiais\COP_LB_FED.paa"
+            }, "" },
+            { "Policia Hibrido", "cop", {
+                "textures\Veiculos\Policiais\COP_LB_HIB.paa"
             }, "" },
             { "Civ Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"

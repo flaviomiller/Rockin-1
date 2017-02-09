@@ -30,7 +30,7 @@ switch (playerSide) do {
                 player setObjectTextureGlobal [0, "textures\roupas\civis\civilian_uniform_7.jpg"];
             };
             if (uniform player isEqualTo "U_C_Commoner1_1") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\lacoste.jpg"];
+                player setObjectTextureGlobal [0, "textures\roupas\civis\SpawnRockIn.jpg"];
             };
         };
     };
@@ -44,11 +44,11 @@ switch (playerSide) do {
                 };
 				*/
 				if (FETCH_CONST(life_coplevel) isEqualTo 1) then {
-                    _skinName = "textures\Roupas\Policiais\cop_RJ.jpg";
+                    _skinName = "textures\Roupas\Policiais\CET.jpg";
                 };
 				
 				if (FETCH_CONST(life_coplevel) isEqualTo 2) then {
-                    _skinName = "textures\Roupas\Policiais\cop_SP.jpg";
+                    _skinName = "textures\Roupas\Policiais\CET.jpg";
                 };
 				
             };

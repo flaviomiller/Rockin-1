@@ -129,7 +129,7 @@ class Clothing {
 	
     class Premium {
         title = "Premium Shop";
-        conditions = "license_civ_rebel";
+        conditions = "call life_donorlevel isEqualTo 1";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
