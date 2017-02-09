@@ -40,6 +40,22 @@ class ProcessAction {
         //ScrollText = "Process Whiskey";
         NoLicenseCost = 999999;
     };
+	
+    class LSD {
+        MaterialsReq[] = {{"centeio",1}};
+        MaterialsGive[] = {{"LSD",1}};
+        Text = "STR_Process_LSD";
+        //ScrollText = "Contaminate Rye";
+        NoLicenseCost = 999999;
+    }
+	
+    class Krokodil {
+        MaterialsReq[] = {{"codeina",1}};
+        MaterialsGive[] = {{"krokodil",1}};
+        Text = "STR_Process_Krokodil";
+        //ScrollText = "Process Krokodil";
+        NoLicenseCost = -1;
+    };
 
     class legalweed {
         MaterialsReq[] = {{"cannabis",1}};

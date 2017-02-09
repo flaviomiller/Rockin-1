@@ -672,11 +672,17 @@ Ouro lavado:               xx.000    12kg<br/>
  
 Tartarugas:                10.000     4kg<br/>
  
-Metanfetamina:              3200      4kg<br/>
+Metanfetamina:              2500      4kg<br/>
  
-Cocaina:                    3200      4kg<br/>
-  
-Maconha Ilegal:             3200      4kg<br/><br/>
+LSD                         2500      4kg<br/>
+ 
+Krokodil                    2500      4kg<br/>
+ 
+Cocaina:                    3000      4kg<br/>
+ 
+Heroina                     2500      4kg<br/>
+   
+Maconha Ilegal:             2500      4kg<br/><br/>
                 "
         ]
     ];

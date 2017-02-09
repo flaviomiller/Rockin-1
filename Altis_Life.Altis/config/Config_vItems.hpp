@@ -153,7 +153,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "metanfetamina" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "metanfetamina", "LSD", "krokodil" };
     };
 
     class oil {
@@ -600,6 +600,50 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_legalweed.paa";
     };
+	
+    class LSD {
+        variable = "LSD";
+        displayName = "STR_Item_LSD";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 2500;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_LSD.paa";
+    };
+	
+    class codeina {
+        variable = "codeina";
+        displayName = "STR_Item_codeina";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_codeina.paa";
+    };
+	
+    class krokodil {
+        variable = "Krokodil";
+        displayName = "STR_Item_Krokodil";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 2500;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_krokodil.paa";
+    };
+	
+    class centeio {
+        variable = "centeio";
+        displayName = "STR_Item_centeio";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_centeio.paa";
+    };
 
     //Mined Items
     class oil_unprocessed {
@@ -774,7 +818,7 @@ class VirtualItems {
         displayName = "STR_Item_Metanfetamina";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 3000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_metanfetamina.paa";
@@ -785,7 +829,7 @@ class VirtualItems {
         displayName = "STR_Item_HeroinP";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 2500;
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
@@ -808,7 +852,7 @@ class VirtualItems {
         displayName = "STR_Item_Marijuana";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 2500;
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
@@ -831,7 +875,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 3000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";
@@ -842,7 +886,7 @@ class VirtualItems {
         variable = "redgull";
         displayName = "STR_Item_RedGull";
         weight = 1;
-        buyPrice = 1500;
+        buyPrice = 1000;
         sellPrice = 200;
         illegal = false;
         edible = 100;
@@ -1086,7 +1130,7 @@ class VirtualItems {
         displayName = "STR_Item_TurtleRaw";
         weight = 6;
         buyPrice = -1;
-        sellPrice = 3000;
+        sellPrice = 2500;
         illegal = true;
         edible = -1;
         icon = "icons\ico_turtleRaw.paa";

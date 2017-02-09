@@ -32,7 +32,7 @@ class CfgGather {
             amount = 3;
             zones[] = { "centeio" };
             item = "";
-            zoneSize = 15;
+            zoneSize = 30;
         };
 		
         class graphics {
@@ -67,7 +67,7 @@ class CfgGather {
             amount = 3;
             zones[] = { "codeina","codeina_1" };
             item = "";
-            zoneSize = 18;
+            zoneSize = 30;
         };
 		
 	    class kinderovo {
