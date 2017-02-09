@@ -537,7 +537,7 @@ Todos os banimentos irão seguir esta ordem:<br/>
 Y: Abrir o menu.<br/>
 U: Trancar e destrancar veículos e casas.<br/>
 T: Abrir o porta-malas.<br/>
-5,6,7 e 8: Gestos
+1, 2 e 3: Sirenes (Policia ou Médicos).<br/>
 Left Shift + B: Render-se (Mãos na cabeça).<br/>
 Left Windows: Interagir com tudo.<br/>
 Left Shift + H: Colocar a arma no coldre. OBRIGATÓRIO EM CIDADES E EVENTOS.<br/>
@@ -545,7 +545,6 @@ Left Shift + G: Nocautear.<br/>
 Left Ctrl + H: Reverter a arma no coldre.<br/>
 Shift + Spacebar: Pular.<br/>
 Shift + C: Usar Zipties.<br/>
-5, 6, 7 e 8: Movimentos do personagem.<br/>
 Left Shift + O: Tirar e colocar Protetores de ouvido.<br/><br/>
                 "
         ]
@@ -679,7 +678,7 @@ Ouro lavado:               xx.000    12kg<br/>
  
 Tartarugas:                10.000     4kg<br/>
  
-Metanfetamina:              2500      4kg<br/>
+Metanfetamina:              3000      4kg<br/>
  
 LSD                         2500      4kg<br/>
  
