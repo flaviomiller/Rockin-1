@@ -11553,5 +11553,9 @@
             <Original>Scalpel</Original>
 			<Portuguese>Bisturi</Portuguese>
         </Key>
+		<Key ID="STR_Item_Painkillers">
+            <Original>Painkiller</Original>
+			<Portuguese>Analgésico</Portuguese>
+        </Key>
 	</Package>
 </Project>
