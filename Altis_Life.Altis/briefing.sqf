@@ -715,7 +715,7 @@ Maconha by SnoopDog:   30.000<br/>
  <br/>
 Licenca Casa                     400.000<br/>
  <br/>
-Licenca Rebelde(Perde ao ser preso)750.000<br/>
+Licenca Rebelde(Perde ao ser preso)500.000<br/>
  <br/>              
 Farms Ilegais<br/>
  
