@@ -1,0 +1,122 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"Slave Traders" by Foamy of TRG
+www.strainonline.com
+www.strainmod.com
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+This is a script I wrote back in April 2014 and was on our Beta server by June 2014.
+
+Script info:
+You can sell hostages to a slaver who will then port them into a "pen" where the player must "Roll his way to Freedom" by rolling Slave Cigarettes. Once the player rolled the cigs he turned them in to the pen boss to be ported out. The person "selling" was paid a fee, configurable in script, and had a variable set to stop them from enslaving someone every ten minutes and adds human trafficking to the player being enslaved had a variable attached as well to prevent being a victim every ten mins. Of course there was a check to port the player back to the slave pen if they escaped somehow, i.e. chopper rescue.
+
+In order to sell a player the victim must be a hostage (i.e. restrained) 
+
+(On TRG we had a custom map addition with a walled in "Slave Pen" that had a tobacco field for picking, you can design up whatever you like in the map editor, I recommend using solid walls or people will stand outside the fence and shoot the hostages.)
+
+Here we go!
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Step 1:
+
+fn_sellHostage.sqf
+fn_sellHostageAction.sqf
+fn_getoutofSlavery.sqf
+
+Put these files in the core\slavery directory (yes I know, create the directory)
+
+In Functions.h add the following somewhere towards the bottom.
+
+class Foamy_Slavery
+	{
+		file = "core\slavery";
+		class getoutofSlavery {};
+		class sellHostage {};
+		class sellHostageAction {};
+	};
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(I am going to assume you can find this file)
+
+Step 2: Add the following variable to your configuration.sqf 
+life_enslaved = false;
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(For this step I am going to assume you can make a mission marker)
+
+Step 3: Add a marker named "slave_trader_center"
+ 
+Add this marker where you want the slave pen to be. The marker should be in the center of the pen since it will also be used to keep the player inside. You will need this to keep players from being able to be picked up in a heli, think jail. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Step 4: Create a 2nd marker in your mission file called "slave_trader_marker"
+
+This is used to make sure the "seller" is near the marker before running the script. Unless you want to be able to send them from anywhere in which case skip it and comment out the distance check in fn_sellHostage.sqf Line 24 - 30.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(This assumes you are going to use the Cigs Item)
+
+Step 5: Create a new gather zone in fn_civZoneCreator.sqf and add the following:
+_tobaccoZones = ["slave_trader_pick_area"]; <--- goes with the rest of them.
+
+(Put the next part at the bottom)
+//Create Tobacco zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[8,18,170,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Tobacco = player addAction['Pick Tobacco',life_fnc_pickTobacco,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Tobacco;"];
+} foreach _tobaccoZones;
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(This step assumes you know how to create a virtual Item)
+
+Step 6: create the following 2 items
+
+"life_inv_tobacco" / tobacco <-- Item you pick
+"life_inv_cigarette" / cigarette <-- product you produce
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Step 7: Create the Pen Boss, you can use the following just change the ID and Item # to fit your mission order.
+// Pen Boss NPC		
+class Item2 <-- change me to the next number in sequence in the section you out it in
+{
+	position[]={11873.927,0.000,22471.734};
+	azimut=-163.60611;
+	id=2403; <----- CHANGE ME to your Next Avail ID 
+	side="CIV";
+	vehicle="C_man_p_beggar_F_euro";
+	text="Pen Boss";
+	init="this enableSimulation false; this allowDamage false; this addAction [""Get out of here!"", life_fnc_getoutofSlavery,"""",0,false,false,"""",' life_enslaved ']; this addAction[""Roll Cigarettes"",life_fnc_trimAction,""tobacco"",0,false,false,"""",' life_inv_tobacco > 0 && !life_is_trimming && life_enslaved'];";
+};
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Step 8:
+
+Add the following to fn_wantedAdd.sqf (Should be obvious where to add it)
+
+case "236": {_type = ["Human Trafficking",1000]}; <--- you can change the price to whatever you want
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Now this script assumes you have a hostage function since we had one on TRG. I will make that script avail in a different post, so until then just comment out the hostage variables located:
+Line 15 of fn_sellHostage.sqf
+Line 25 of fn_sellHostageAction.sqf
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In our case we had a map edited location with a vendor that sold a retail version of the cigs for players and players would "Sell" the hostage standing close to him (distance check based upon marker), I put the NPC on top of the "slave_trader_marker" so it appeared you were selling to him when it was just an area check for distance. You actually activated by an addaction. You can move it to the interaction key if you like or just put the call in an NPC's init.
+
+Here is the setup action code:
+
+Put the following in your fn_setupActions.sqf:
+
+// Sell PLayer into Slavery
+		life_actions = life_actions + [player addAction["Sell Hostage",life_fnc_sellHostage,"",0,false,false,"",'  !isNull cursorTarget && isPlayer cursorTarget && (side cursorTarget != independent) && (cursorTarget getVariable ["restrained",FALSE]) && alive cursorTarget && (player distance cursorTarget < 3.5) && ((player distance (getMarkerPos "slave_trader_marker") < 10)) && !(cursorTarget getVariable ["escorting",FALSE]) ']];
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++		
+
+That should be it. Enjoy!
