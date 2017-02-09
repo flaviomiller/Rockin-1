@@ -42,6 +42,13 @@ TEXT HERE<br/><br/>
                 "
 ArmaLife is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
 Eu, (Dexter), agradeço toda a equipe que participou no desenvolvimento do servidor e a todos os players que ajudaram a reportar bugs.<br/>
+ 
+Reformulação da MISSÃO, programação de SCRIPTS:<br/>
+Kovauviske, AbsoluT e Muller.<br/>
+ 
+Formulação de TeamSpeak:<br/>
+Brunno e Tulio<br/>
+ 
 Reformulação de SKINS para o servidor, os créditos vão para nosso amigo Michell Raposo. Obrigado pelo excelente trabalho!<br/>
 Email para contato:<br/>
 michellraposo@gmail.com!<br/><br/>
