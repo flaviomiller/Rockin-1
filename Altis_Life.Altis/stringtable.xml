@@ -11529,5 +11529,13 @@
             <Original>Bounty Hunter</Original>
 			<Portuguese>Caçador de Recompensa</Portuguese>
         </Key>
+		 <Key ID="STR_Item_Kidney">
+            <Original>Kidney</Original>
+			<Portuguese>Rim</Portuguese>
+        </Key>
+		<Key ID="STR_Item_Scalpel">
+            <Original>Scalpel</Original>
+			<Portuguese>Bisturi</Portuguese>
+        </Key>
 	</Package>
 </Project>

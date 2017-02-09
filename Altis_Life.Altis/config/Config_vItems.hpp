@@ -1245,4 +1245,18 @@ class VirtualItems {
         edible = 100;
         icon = "icons\ico_muttonLeg.paa";
     };
+	
+    class scalpel {
+        variable = "goat";
+        displayName = "STR_Item_Scalpel";
+        weight = 2;
+        edible = 100;
+        icon = "icons\ico_bisturi.paa";
+    };
+	    class kidney {
+        variable = "goat";
+        displayName = "STR_Item_Kidney";
+        edible = 100;
+        icon = "icons\ico_rim.paa";
+    };
 };
