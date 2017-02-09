@@ -12,6 +12,6 @@ For "_i" from 0 to 1 step 0 do {
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
     _vehicle say3D "SirenPers";
-    sleep 2.0;
+    sleep 8.0;
     if(!(_vehicle getVariable "siren2")) exitWith {};
 };
