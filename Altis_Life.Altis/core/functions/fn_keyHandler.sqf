@@ -256,7 +256,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
         };
     };
 
-	//Z Key Segunda Sirene
+	//3 Key Sirene de Perseguição
 	case 4: {
         if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
            [] spawn {
@@ -279,7 +279,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
             };
         };	
 	
-	//Z Key Segunda Sirene
+	//2 Key Sirene de Parada
 	case 2: {
         if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
            [] spawn {
@@ -302,7 +302,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
             };
         };
 	
-    //F Key
+    //1 Key Sirene de Ocorrencia
     case 3: {
         if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
             [] spawn {
