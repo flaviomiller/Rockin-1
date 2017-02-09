@@ -1250,12 +1250,19 @@ class VirtualItems {
         variable = "goat";
         displayName = "STR_Item_Scalpel";
         weight = 2;
+        buyPrice = 1000;
+        sellPrice = 500;
+        illegal = true;
         edible = 100;
         icon = "icons\ico_bisturi.paa";
     };
 	    class kidney {
         variable = "goat";
         displayName = "STR_Item_Kidney";
+        weight = 30;
+        buyPrice = 15000;
+        sellPrice = 15000;
+        illegal = true;
         edible = 100;
         icon = "icons\ico_rim.paa";
     };
