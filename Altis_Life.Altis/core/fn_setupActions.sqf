@@ -20,7 +20,7 @@ switch (playerSide) do {
 		//Passport 
 	    life_actions = life_actions + [player addAction["<t color='#00FF00'>Apresentar a Identidade</t>",life_fnc_civPasseport,"",1,false,true,"",' playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" ']];
 	    //Take The Organs
-		life_actions = life_actions + [player addAction["Arrancar Rim",life_fnc_takeOrgans,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hasOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		life_actions = life_actions + [player addAction["Arrancar Rim",life_fnc_takeOrgans,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hasOrgan") && !(player getVariable "transporting") && animationState cursorTarget isEqualTo "Incapacitated"']];
     };
 	case west: {
 	    //CopSeizeObjects

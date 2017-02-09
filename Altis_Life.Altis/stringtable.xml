@@ -11558,4 +11558,8 @@
 			<Portuguese>Analgésico</Portuguese>
         </Key>
 	</Package>
+			<Key ID="STR_pInAct_RevokeLicense">
+            <Original>Revoke Licence</Original>
+			<Portuguese>Retirar CNH</Portuguese>
+        </Key>
 </Project>
