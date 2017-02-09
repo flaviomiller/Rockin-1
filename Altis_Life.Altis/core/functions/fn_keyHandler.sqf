@@ -260,9 +260,9 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
 	case 4: {
         if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
            [] spawn {
-               life_siren2_active = true;
+               life_siren3_active = true;
                 sleep 1.2;
-                life_siren2_active = false;
+                life_siren3_active = false;
 				
             };
 				
