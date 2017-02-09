@@ -116,6 +116,22 @@
             <German>Auf den Fahrersitz</German>
             <French>Place conducteur</French>
         </Key>
+		<Key ID="STR_Civ_LicenseRemove_1">
+			<Original>You have lost all your motor vehicle licenses for vehicular manslaughter.</Original>
+			<English>You have lost all your motor vehicle licenses for vehicular manslaughter.</English>
+			<German>Du hast alle deine Fahrzeug-Lizenzen durch fahrlässige Tötung mit einem Fahrzeug verloren.</German>
+			<French>Vous avez perdu tout vos permis véhicule pour avoir écrasé quelqu'un.</French>
+			<Italian>Hai perso tutte le tue licenze di guida a causa di un omicidio stradale.</Italian>
+			<Portuguese>Você não perdeu suas licenças de motorista por atropelamento.</Portuguese>
+		</Key>
+		<Key ID="STR_Civ_LicenseRemove_2">
+			<Original>You have lost your firearms license for manslaughter.</Original>
+			<English>You have lost your firearms license for manslaughter.</English>
+			<German>Du hast deinen Waffenschein wegen Mordes verloren.</German>
+			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
+			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
+			<Portuguese>Você perdeu sua licença de armas de fogo por homicídio culposo.</Portuguese>
+		</Key>
 		<Key ID="STR_pAct_Blind">
             <Original>Blindfold</Original>
             <English>Blindfold</English>
