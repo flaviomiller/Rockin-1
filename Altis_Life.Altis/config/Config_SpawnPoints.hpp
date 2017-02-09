@@ -58,7 +58,7 @@ class CfgSpawnPoints {
                 displayName = "Morumbi VIP";
                 spawnMarker = "prem_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "call life_donorlevel isEqualTo 1";
             };
 
             class RebelE {
