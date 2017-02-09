@@ -81,6 +81,20 @@ switch (true) do {
 			player setFatigue .5;
 		};
 	};
+	
+		case (_item isEqualto "painkillers"):
+	{
+		if(vehicle player != player) exitWith {hint "Você não pode curar em um veículo ..."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			player setDamage 0;
+			player setFatigue 0;
+			player allowDamage true;
+			player enableSimulation true;
+			closeDialog 0;
+			hint "Os analgésicos fez efeito! Você está com a vida cheia."
+		};
+	};
 
     case (_item isEqualTo "fuelEmpty"): {
         [] spawn life_fnc_jerryCanRefuel;

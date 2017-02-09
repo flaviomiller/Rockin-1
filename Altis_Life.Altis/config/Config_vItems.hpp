@@ -20,7 +20,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator","gpstracker","kidney" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator","gpstracker","kidney","painkillers" };
     };
 	
     class Mercadorias_Roubadas {
@@ -1256,6 +1256,7 @@ class VirtualItems {
         edible = 100;
         icon = "icons\ico_bisturi.paa";
     };
+	
 	    class kidney {
         variable = "kodney";
         displayName = "STR_Item_Kidney";
@@ -1265,5 +1266,16 @@ class VirtualItems {
         illegal = true;
         edible = 100;
         icon = "icons\ico_rim.paa";
+    };
+	
+		class painkillers {
+        variable = "painkillers";
+        displayName = "STR_Item_Painkillers";
+        weight = 5;
+        buyPrice = 1500;
+        sellPrice = 1000;
+        illegal = false;
+        edible = 100;
+        icon = "icons\ico_painkiller.paa";
     };
 };
