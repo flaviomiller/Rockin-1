@@ -200,6 +200,14 @@ class ProcessAction {
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 999999;
     };
+	
+    class cigarettes {
+        MaterialsReq[] = {{"tobacco",1}};
+        MaterialsGive[] = {{"cigarette",1}};
+        Text = "STR_Process_Cigarettes";
+        //ScrollText = "Enrolar Cigarros";
+        NoLicenseCost = -1;
+    };
 
     class cement {
         MaterialsReq[] = {{"rock",1}};
