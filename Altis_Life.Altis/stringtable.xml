@@ -11575,9 +11575,9 @@
             <Original>Painkiller</Original>
 			<Portuguese>Analgésico</Portuguese>
         </Key>
-	</Package>
-			<Key ID="STR_pInAct_RevokeLicense">
+		<Key ID="STR_pInAct_RevokeLicense">
             <Original>Revoke Licence</Original>
 			<Portuguese>Retirar CNH</Portuguese>
         </Key>
+	</Package>
 </Project>
