@@ -179,7 +179,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
             [] call life_fnc_restrainAction;
         };
 		
-		if (_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if (_shift && playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			if ([false,"zipties",1] call life_fnc_handleInv) then//Removes the zipties from the inventory
 			{
@@ -195,7 +195,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
     case 34: {
         if (_shift) then {_handled = true;};
         if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
-            if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
+            if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player isEqualTo primaryWeapon player || currentWeapon player isEqualTo handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
                 [cursorObject] spawn life_fnc_knockoutAction;
             };
         };
@@ -258,7 +258,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
 
 	//3 Key Sirene de Perseguição
 	case 4: {
-        if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+        if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) isEqualTo player)}) then {
            [] spawn {
                life_siren3_active = true;
                 sleep 1.2;
@@ -268,20 +268,20 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
 				
             _veh = vehicle player;
             if (isNil {_veh getVariable "siren3"}) then {_veh setVariable ["siren3",false,true];};
-            if ((_veh getVariable "siren2")) then {
+            if ((_veh getVariable "siren3")) then {
                 titleText ["Sirene de Perseguição OFF","PLAIN"];
                 _veh setVariable["siren3",false,true];
             } else {
                 titleText ["Sirene de Perseguição ON","PLAIN"];
                 _veh setVariable["siren3",true,true];
-				   [_veh] remoteExec ["life_fnc_copsiren2",RCLIENT];
+				   [_veh] remoteExec ["life_fnc_copSiren3",RCLIENT];
                 };
             };
         };	
 	
 	//2 Key Sirene de Parada
 	case 2: {
-        if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+        if(playerSide in [west] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) isEqualTo player)}) then {
            [] spawn {
                life_siren2_active = true;
                 sleep 1.2;
@@ -304,7 +304,7 @@ _msg = format["O jogador %1 apertou CTRL + ESC e perdeu todos os seus itens.",na
 	
     //1 Key Sirene de Ocorrencia
     case 3: {
-        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) isEqualTo player)}) then {
             [] spawn {
                 life_siren_active = true;
                 sleep 4.7;
