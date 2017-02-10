@@ -15,8 +15,6 @@ _vehicle setVariable ["trunk_in_use",true,true];
 _vehicle setVariable ["trunk_in_use_by",player,true];
 if (!createDialog "TrunkMenu") exitWith {hint localize "STR_MISC_DialogError";}; //Couldn't create the menu?
 disableSerialization;
-private _playerCount = count((position player) nearObjects ["Man",5]);
-if (_playerCount > 1) exitWith {hint "Peça para que outras pessoas se afastem do veículo ou da casa.";};
 
 if (_vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F") then {
     ctrlSetText[3501,format [(localize "STR_MISC_HouseStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
