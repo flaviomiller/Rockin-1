@@ -6212,6 +6212,15 @@
             <Portuguese>Sua aeronave está reparada e com o tanque cheio!</Portuguese>
             <Polish>Helikopter został naprawiony i natankowany</Polish>
         </Key>
+        <Key ID="STR_Process_Cigarettes">
+            <Original>Enrolar Cigarros</Original>
+        </Key>
+        <Key ID="STR_SellSlave">
+            <Original>Vender Escravo</Original>
+        </Key>
+        <Key ID="STR_SlaveLeave">
+            <Original>Vaza daqui, fedor!</Original>
+        </Key>
     </Package>
     <Package name="Life_Items">
         <Key ID="STR_Item_Cannabis">
@@ -6224,6 +6233,12 @@
             <Italian>Cannabis</Italian>
             <Portuguese>Maconha não Processada</Portuguese>
             <Polish>Konopie</Polish>
+        </Key>
+        <Key ID="STR_Item_cigarette">
+            <Original>Cigarros</Original>
+        </Key>
+        <Key ID="STR_Item_tobacco">
+            <Original>Tabaco</Original>
         </Key>
         <Key ID="STR_Item_Apple">
             <Original>Apple</Original>
@@ -10595,6 +10610,9 @@
             <Russian></Russian>
             <Portuguese>Atropelamento</Portuguese>
             <German>Fahrlässige Tötung</German>
+        </Key>
+        <Key ID="STR_Crime_236">
+            <Original>Tráfico de Pessoas</Original>
         </Key>
         <Key ID="STR_Crime_187">
             <Original>Manslaughter</Original>
