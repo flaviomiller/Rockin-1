@@ -145,6 +145,8 @@ class Life_Client_Core {
         class copSearch {};
         class copEnter {};
         class copSiren {};
+        class copSiren2 {};
+        class copSiren3 {};
         class doorAnimate {};
         class fedCamDisplay {};
         class licenseCheck {};
