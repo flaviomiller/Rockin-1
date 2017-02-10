@@ -20,7 +20,7 @@ _zone16 = getMarkerPos "s_16";
 
 
 
-_zone1dis = 400;
+_zone1dis = 500;
 _zone2dis = 300;
 _zone3dis = 300;
 _zone4dis = 230;
