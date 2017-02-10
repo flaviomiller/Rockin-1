@@ -858,13 +858,13 @@ class VirtualItems {
         icon = "icons\ico_heroinProcessed.paa";
     };
 
-    class cannabis {
+    class cannabis { 
         variable = "cannabis";
         displayName = "STR_Item_Cannabis";
         weight = 4;
         buyPrice = -1;
         sellPrice = -1;
-        illegal = f;
+        illegal = false;
         edible = -1;
         icon = "icons\ico_cannabis.paa";
         processedItem = "marijuana";

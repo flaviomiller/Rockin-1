@@ -140,6 +140,15 @@ switch (true) do {
 			[] spawn life_fnc_useKokain;
 		};
 	};
+	
+			case (_item isEqualTo "LSD"):
+	{
+		if(playerSide in [west,independent]) exitWith {hint "Nada de droga no serviço!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_useLSD;
+		};
+	};
 
 	default
 	{

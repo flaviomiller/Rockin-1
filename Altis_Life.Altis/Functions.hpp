@@ -305,6 +305,7 @@ class Life_Client_Core {
         class storageBox {};
 		class weed {};
 		class useKokain {};
+		class useLSD {};
     };
 
     class Medical_System {
