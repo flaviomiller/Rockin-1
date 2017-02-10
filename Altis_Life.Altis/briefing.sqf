@@ -118,7 +118,7 @@ Gravíssima = 8000 / Grave = 5000 / Média = 3000 / Leve = 1000<br/><br/>
 9. Não parar em bloqueio policial = Multa gravíssima<br/>
 10. Efetuar conversão em locais proibidos = Multa grave<br/>
 11. Forçar passagem entra veículos = Multa gravíssima x10 + Retenção da licença de motorista<br/>
-12. Não reduzir próximo a hospitais, estações de embarque e desembarque ou houvendo movimentação de pedestres = Multa gravíssima<br/>
+12. Não reduzir próximo a hospitais, estações de embarque e desembarque ou havendo movimentação de pedestres = Multa gravíssima<br/>
 13. Buzina prolongada e sucessivamente = Multa leve<br/>
 14. Estacionar impedindo a movimentação de outros veículos = Multa média + Remoção do veiculo<br/>
 15. Estacionar em fila dupla = Multa grave + Remoção do veiculo<br/>
