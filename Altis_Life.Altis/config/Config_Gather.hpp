@@ -168,5 +168,15 @@ class CfgGather {
             mined[] = { "oil_unprocessed" };
             zoneSize = 8;
         };
+	    
+        class tobacco {
+            amount = 1;
+            zones[] = { "tobacco" };
+            item = "";
+            mined[] = { "tobacco" };
+            zoneSize = 5;
+        };    
+	
     };
+	
 };
