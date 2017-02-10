@@ -184,6 +184,8 @@ class Life_Settings {
         {"STR_Crime_666","200","666"},
         {"STR_Crime_667","4500","667"},
         {"STR_Crime_668","1500","668"},
+        {"STR_Crime_919","1500","919"},
+	    {"STR_Crime_919A","1500","919A"},
         {"STR_Crime_1","250","1"},
         {"STR_Crime_2","200","2"},
         {"STR_Crime_3","150","3"},
@@ -209,7 +211,7 @@ class Life_Settings {
         {"STR_Crime_23","5000","23"},
         {"STR_Crime_24","10000","24"},
         {"STR_Crime_25","20000","25"},
-        {"STR_Crime_236","10000","26"}
+        {"STR_Crime_236","10000","236"}
     };
 };
 

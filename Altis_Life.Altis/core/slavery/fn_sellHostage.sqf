@@ -29,10 +29,10 @@ if((player distance (getMarkerPos "slave_trader_marker") < 10)) then
 	[_unit,false] remoteExecCall ["life_fnc_sellHostageAction",_unit,false];
 };
 life_cash = life_cash + _rate;
-hint "You made $20000 selling that fool.";
+hint "Você ganhou $ 20000 vendendo aquele tolo.";
 life_slaver = true;
 player setVariable["slaver",true,true];
 sleep (30 * 60);
 life_slaver = false;
 player setVariable["slaver",false,true];
-hint "You can go enslave the world again...";
+hint "Preciso de mais pessoas, se quiser mais alguma grana traga mais.";
