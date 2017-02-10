@@ -165,7 +165,6 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
-		class copSiren2 {};
     };
 
     class Dialog_Controls {
