@@ -823,6 +823,29 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_metanfetamina.paa";
     };
+	
+	
+    class tobacco {
+        variable = "tobacco";
+        displayName = "STR_Item_tobacco";
+        weight = 0;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_tobacco.paa";
+    };
+	
+    class cigarette {
+        variable = "cigarette";
+        displayName = "STR_Item_cigarette";
+        weight = 0;
+        buyPrice = -1;
+        sellPrice = 300;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cigarette.paa";
+    };
 
     class heroin_processed {
         variable = "heroinProcessed";
