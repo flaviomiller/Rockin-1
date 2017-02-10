@@ -17,6 +17,7 @@ switch (playerSide) do {
         !isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && animationState cursorObject isEqualTo "Incapacitated" && !(cursorObject getVariable ["robbed",false]) ']];
         //Gang
         life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Esconderijo</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
+	life_actions = life_actions + [player addAction["Sell Hostage",life_fnc_sellHostage,"",0,false,false,"",'  !isNull cursorTarget && isPlayer cursorTarget && (side cursorTarget != independent) && (cursorTarget getVariable ["restrained",FALSE]) && alive cursorTarget && (player distance cursorTarget < 3.5) && ((player distance (getMarkerPos "slave_trader_marker") < 10)) && !(cursorTarget getVariable ["escorting",FALSE]) ']];
 		//Passport 
 	    life_actions = life_actions + [player addAction["<t color='#00FF00'>Apresentar a Identidade</t>",life_fnc_civPasseport,"",1,false,true,"",' playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" ']];
 	    //Take The Organs
