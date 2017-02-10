@@ -9,7 +9,7 @@ private ["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-_clothings = ["U_C_Commoner1_1"];
+_clothings = ["U_Rangemaster"];
 player addUniform (selectRandom _clothings);
 
 /* ITEMS */

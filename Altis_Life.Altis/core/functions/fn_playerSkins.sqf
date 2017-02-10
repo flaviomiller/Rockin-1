@@ -29,7 +29,7 @@ switch (playerSide) do {
             if (uniform player isEqualTo "U_C_Poloshirt_redwhite") then {
                 player setObjectTextureGlobal [0, "textures\roupas\civis\civilian_uniform_7.jpg"];
             };
-            if (uniform player isEqualTo "U_C_Commoner1_1") then {
+            if (uniform player isEqualTo "U_Rangemaster") then {
                 player setObjectTextureGlobal [0, "textures\roupas\civis\SpawnRockIn.jpg"];
             };
         };
