@@ -71,7 +71,7 @@ switch (true) do {
 	[cursorTarget] spawn life_fnc_gpsTracker;
     };
 	
-	case (_item isEqualto "kidney"):
+	case (_item isEqualto "kidney_medic" || _item isEqualto "kidney"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
