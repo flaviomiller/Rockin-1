@@ -1281,7 +1281,7 @@ class VirtualItems {
     };
 	
 	    class kidney {
-        variable = "kodney";
+        variable = "kidney";
         displayName = "STR_Item_Kidney";
         weight = 30;
         buyPrice = 15000;
