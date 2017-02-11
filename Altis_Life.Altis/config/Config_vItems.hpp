@@ -1291,6 +1291,18 @@ class VirtualItems {
         icon = "icons\ico_rim.paa";
     };
 	
+	
+	    class kidney_medic {
+        variable = "kidney_medic";
+        displayName = "STR_Item_Kidney_medic";
+        weight = 30;
+        buyPrice = 5000;
+        sellPrice = 5000;
+        illegal = false;
+        edible = 100;
+        icon = "icons\ico_rim.paa";
+    };
+	
 		class painkillers {
         variable = "painkillers";
         displayName = "STR_Item_Painkillers";
