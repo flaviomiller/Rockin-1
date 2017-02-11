@@ -72,16 +72,10 @@ _unit spawn {
     disableSerialization;
     _requestBtn = ((findDisplay 7300) displayCtrl 7303);
     _requestBtn ctrlEnable false;
-
-    if (playerSide  isEqualTo independent || playerSide isEqualTo resistance) then {
-        _requestTime = time + 150;
-    } else {
-        if (independent countSide playableUnits isEqualTo 0) then {
-				_requestTime = time + 180;
-			} else {
-				_requestTime = time + 360;
-			};
-    };
+    _requestTime = time + 5;
+    waitUntil {round(_requestTime - time) <= 0 || isNull _this};
+    _requestBtn ctrlEnable true;
+};
 
     waitUntil {round(_requestTime - time) <= 0 || isNull _this};
     _requestBtn ctrlEnable true;
