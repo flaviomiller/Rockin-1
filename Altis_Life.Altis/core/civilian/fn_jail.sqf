@@ -31,7 +31,7 @@ if (_bad) then {
 };
 
 //Check to make sure they goto check
-if (player distance (getMarkerPos "jail_marker") > 40) then {
+if (player distance (getMarkerPos "jail_marker") > 80) then {
     player setPos (getMarkerPos "jail_marker");
 };
 
