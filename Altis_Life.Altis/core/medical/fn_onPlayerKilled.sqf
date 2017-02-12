@@ -50,7 +50,7 @@ _unit spawn {
     _RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
     _Timer = ((findDisplay 7300) displayCtrl 7301);
 
-        if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
+        if (LIFE_SETTINGS(getNumber,"respawn_timer") < 200) then {
             _maxTime = time + 5;
         } else {
             _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
@@ -67,7 +67,7 @@ _unit spawn {
     disableSerialization;
     _requestBtn = ((findDisplay 7300) displayCtrl 7303);
     _requestBtn ctrlEnable false;
-    _requestTime = time + 5;
+    _requestTime = time + 200;
     waitUntil {round(_requestTime - time) <= 0 || isNull _this};
     _requestBtn ctrlEnable true;
 };
