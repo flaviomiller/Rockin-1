@@ -2,7 +2,7 @@
 /*
     File: fn_onPlayerKilled.sqf
     Author: Bryan "Tonic" Boardwine
-	Edited by: Muller and Dexter
+
     Description:
     When the player dies collect various information about that player
     and pull up the death dialog / camera functionality.
@@ -49,17 +49,12 @@ _unit spawn {
     disableSerialization;
     _RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
     _Timer = ((findDisplay 7300) displayCtrl 7301);
-	
-        if (playerSide isEqualTo independent || playerSide isEqualTo resistance) then {
-            _maxTime = time + 150;
-        } else { 
-			if (independent countSide playableUnits isEqualTo 0) then {
-				_maxTime = time + 180;
-			} else {
-				_maxTime = time + 360;
-			};
-		};
-		
+
+        if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
+            _maxTime = time + 5;
+        } else {
+            _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
+        };
     _RespawnBtn ctrlEnable false;
     waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
     round(_maxTime - time) <= 0 || isNull _this};
@@ -73,10 +68,6 @@ _unit spawn {
     _requestBtn = ((findDisplay 7300) displayCtrl 7303);
     _requestBtn ctrlEnable false;
     _requestTime = time + 5;
-    waitUntil {round(_requestTime - time) <= 0 || isNull _this};
-    _requestBtn ctrlEnable true;
-};
-
     waitUntil {round(_requestTime - time) <= 0 || isNull _this};
     _requestBtn ctrlEnable true;
 };
