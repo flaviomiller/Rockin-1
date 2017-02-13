@@ -77,6 +77,7 @@ class Life_Client_Core {
         class unrestrain {};		
 		class playSound {};
 		class revokeDriverLicense {};
+		class robBank {};
     };
 	
     class GPS {
