@@ -22,6 +22,9 @@ switch (playerSide) do {
 	    life_actions = life_actions + [player addAction["<t color='#00FF00'>Apresentar a Identidade</t>",life_fnc_civPasseport,"",1,false,true,"",' playerSide isEqualTo civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" ']];
 	    //Take The Organs
 		life_actions = life_actions + [player addAction["Arrancar Rim",life_fnc_takeOrgans,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hasOrgan") && !(player getVariable "transporting") && animationState cursorTarget isEqualTo "Incapacitated"']];
+		//Sinto de Segurança
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Colocar Cinto de Segurança</t>",{life_ceinturesecurite=true; playSound "attachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && !life_ceinturesecurite ']];  
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Retirar o Cinto de Segurança</t>",{life_ceinturesecurite=false; playSound "detachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && life_ceinturesecurite ']];  
     };
 	case west: {
 	    //CopSeizeObjects
@@ -33,8 +36,9 @@ switch (playerSide) do {
         life_actions = life_actions + [player addAction[localize "STR_pAct_GoOut",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)isEqualTo 2)']];
 		//Barriers
 		player addaction ["Barreiras",life_fnc_barrier,[""],0,false,true,"","vehicle player isEqualTo player and BarrierOpen isEqualTo 0"];
-        //Gang
-        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Esconderijo</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) isEqualTo "Flag_Red_F") ']];
+		//Sinto de Segurança
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Colocar Cinto de Segurança</t>",{life_ceinturesecurite=true; playSound "attachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && !life_ceinturesecurite ']];  
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Retirar o Cinto de Segurança</t>",{life_ceinturesecurite=false; playSound "detachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && life_ceinturesecurite ']];  
     };
 	case independent: {
 	    //Medenter
@@ -43,5 +47,8 @@ switch (playerSide) do {
         life_actions = life_actions + [player addAction[localize "STR_pAct_GunnerSeat",life_fnc_medEnter,"gunner",100,false,false,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 3.5']]; 		
         life_actions = life_actions + [player addAction[localize "STR_pAct_GoOut",life_fnc_medEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)isEqualTo2)']];
 		player addaction ["Barreiras",life_fnc_barrier,[""],0,false,true,"","vehicle player isEqualTo player and BarrierOpen isEqualTo 0"];
+		//Sinto de Segurança
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Colocar Cinto de Segurança</t>",{life_ceinturesecurite=true; playSound "attachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && !life_ceinturesecurite ']];  
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Retirar o Cinto de Segurança</t>",{life_ceinturesecurite=false; playSound "detachceinture"},"",3,true,true,"",' vehicle player isKindOf "Car" && life_ceinturesecurite ']];  
     };
 };

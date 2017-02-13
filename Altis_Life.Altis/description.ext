@@ -89,6 +89,20 @@ class CfgSounds {
         titles[] = {};
     };
 
+	class attachceinture
+	{
+		name = "attachceinture";
+		sound[] = {"\sounds\attachceinture.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class detachceinture
+	{
+		name = "detachceinture";
+		sound[] = {"\sounds\detachceinture.ogg", 1, 1};
+		titles[] = {};
+	};
+	
     class flashbang {
         name = "flashbang";
         sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
