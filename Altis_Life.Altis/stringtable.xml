@@ -11579,5 +11579,15 @@
             <Original>Revoke Licence</Original>
 			<Portuguese>Retirar CNH</Portuguese>
         </Key>
+		<Key ID="STR_NOTF_ActionInVehicle">
+      <Original>You can't do that from inside the vehicle!</Original>
+      <Portuguese>Você não pode fazer isso de dentro do veículo!</Portuguese>
+      <Polish>Nie możesz tego wykonać z wntrza pojazdu!</Polish>
+    </Key>
+	    <Key ID="STR_NOTF_PlayerNear">
+      <Original>You can't open trunk while a player is near!</Original>
+      <Portuguese>Você não pode abrir o inventário enquanto estiver perto de um jogador!</Portuguese>
+      <Polish>Nie możesz otworzyć wyposażenia gdy inny gracz jest w pobliżu!</Polish>
+    </Key>
 	</Package>
 </Project>
