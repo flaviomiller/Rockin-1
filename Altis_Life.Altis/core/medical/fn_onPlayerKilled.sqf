@@ -50,14 +50,14 @@ _unit spawn {
     _RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
     _Timer = ((findDisplay 7300) displayCtrl 7301);
 
-        if (LIFE_SETTINGS(getNumber,"respawn_timer") < 200) then {
+        if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
             _maxTime = time + 5;
         } else {
             _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
         };
     _RespawnBtn ctrlEnable false;
-    waitUntil {_Timer ctrlSetText format [localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS"] call BIS_fnc_secondsToString];
-    round(_maxTime - time) <= 0 || isNull _this};
+    waitUntil {_Timer ctrlSetText format["Respawn Available in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
+	if (Life_request_timer) then {_maxTime = time + (2 * 150);waitUntil {_Timer ctrlSetText format["Respawn Disponivel em: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 || isNull _this};};Life_request_timer = false; //resets increased respawn timer
     _RespawnBtn ctrlEnable true;
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
@@ -67,7 +67,7 @@ _unit spawn {
     disableSerialization;
     _requestBtn = ((findDisplay 7300) displayCtrl 7303);
     _requestBtn ctrlEnable false;
-    _requestTime = time + 200;
+    _requestTime = time + 5;
     waitUntil {round(_requestTime - time) <= 0 || isNull _this};
     _requestBtn ctrlEnable true;
 };
