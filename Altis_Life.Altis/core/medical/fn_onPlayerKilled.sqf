@@ -56,7 +56,7 @@ _unit spawn {
             _maxTime = time + LIFE_SETTINGS(getNumber,"respawn_timer");
         };
     _RespawnBtn ctrlEnable false;
-    waitUntil {_Timer ctrlSetText format["Respawn Available in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
+    waitUntil {_Timer ctrlSetText format["Respawn Disponivel: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
 	if (Life_request_timer) then {_maxTime = time + (2 * 150);waitUntil {_Timer ctrlSetText format["Respawn Disponivel em: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(_maxTime - time) <= 0 || isNull _this};};Life_request_timer = false; //resets increased respawn timer
     _RespawnBtn ctrlEnable true;
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
