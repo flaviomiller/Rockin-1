@@ -1905,7 +1905,7 @@
             <German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>
             <French>Votre gang a déjà le contrôle de cette cachette!</French>
             <Italian>La tua Gang ha già il controllo di questo Covo</Italian>
-            <Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
+            <Portuguese>Sua gangue já tem controle sobre essa Favela!</Portuguese>
             <Polish>Twój gang aktualnie kontroluje tę kryjówkę !</Polish>
         </Key>
         <Key ID="STR_GNOTF_onePersonAtATime">
@@ -1927,7 +1927,7 @@
             <German>Das Versteck wird durch %1 kontrolliert.&lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du ihr Gang Gebiet übernehmen möchtest?</German>
             <French>Cette cachette est contrôlée par %1.&lt;br/&gt;&lt;br/&gt;Etes-vous sûr que vous voulez prendre leur zone de gang?</French>
             <Italian>Questo Covo è controllato da %1.&lt;br/&gt;&lt;br/&gt;Sicuro di voler prendere il controllo della loro area?</Italian>
-            <Portuguese>Esse esconderijo é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
+            <Portuguese>Essa Favela é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
             <Polish>Ta kryjówka jest kontrolowana przez %1.&lt;br/&gt;&lt;br/&gt;Jesteś pewny że chcesz przjąć ten rejon.</Polish>
         </Key>
         <Key ID="STR_GNOTF_CurrentCapture">
@@ -1938,7 +1938,7 @@
             <German>Versteck ist derzeit unter Kontrolle...</German>
             <French>La cachette est actuellement sous contrôle ...</French>
             <Italian>Il Covo è già sotto controllo...</Italian>
-            <Portuguese>Esconderijo sobre controle....</Portuguese>
+            <Portuguese>Favela sobre controle....</Portuguese>
             <Polish>Kryjówka pod kontrolą ...</Polish>
         </Key>
         <Key ID="STR_GNOTF_CaptureCancel">
@@ -1960,7 +1960,7 @@
             <German>Versteck einnehmen</German>
             <French>Capture cachette</French>
             <Italian>Catturando il Covo</Italian>
-            <Portuguese>Capturando Esconderijo</Portuguese>
+            <Portuguese>Tomandando a Favela</Portuguese>
             <Polish>Przejmowanie kryjówki</Polish>
         </Key>
         <Key ID="STR_GNOTF_Captured">
@@ -1982,7 +1982,7 @@
             <German>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</German>
             <French>%1 et son gang: %2 ont pris le controle de la cachette !</French>
             <Italian>%1 e la sua Gang: %2 - hanno preso il controllo di un Covo!</Italian>
-            <Portuguese>%1 e sua gangue: %2 - agora têm o controle de um esconderijo!</Portuguese>
+            <Portuguese>%1 e sua gangue: %2 - agora têm o controle de uma Favela!</Portuguese>
             <Polish>%1 i jego gang: %2 - przejął kontrolę nad kryjówką!</Polish>
         </Key>
         <Key ID="STR_GNOTF_Over32">
@@ -2081,7 +2081,7 @@
             <German>%1 hat dich zu einer Gang namens %2 eingeladen &lt;br/&gt; Wenn Du die Einladung annimmst, wirst du ein Teil der Gang und bekommst Zugang zu den Gang-Konten und kontrollierten Gang Verstecken.</German>
             <French>%1 vous a invité à un gang appelé %2&lt;br/&gt;Si vous acceptez l'invitation vous serez dans leur gang et aurez accès à des fonds de gangs et des cachettes de gangs contrôlés.</French>
             <Italian>%1 ti ha invitato nella Gang: %2&lt;br/&gt;Se vuoi accettarai l'invito entrerai a far parte della loro Gang ed avrai accesso ai loro fondi e ai loro Covi.</Italian>
-            <Portuguese>%1 convidou você para a gangue %2&lt;br/&gt;Se você aceitar terá acesso aos recursos da gangue e os esconderijos controlados pela mesma.</Portuguese>
+            <Portuguese>%1 convidou você para a gangue %2&lt;br/&gt;Se você aceitar terá acesso aos recursos da gangue e as Favelas controlados pela mesma.</Portuguese>
             <Polish>%1 zaprosił cię do gangu o nazwie %2&lt;br/&gt;Jeżeli zaakceptujesz zaproszenie będziesz członkiem gangu i uzyskasz dostęp do funduszy gangu oraz jego kryjówek</Polish>
         </Key>
         <Key ID="STR_GNOTF_InvitePlayerMSG">
@@ -10208,7 +10208,7 @@
             <Spanish>Escondite de Pandillas 2</Spanish>
             <Russian></Russian>
             <German>Gang Versteck 2</German>
-            <Portuguese>Esconderijo de Gangs 2</Portuguese>
+            <Portuguese>Favela da Rocinha</Portuguese>
             <Polish>Kryjówka gangu 2</Polish>
             <Italian>Covo Gang 2</Italian>
         </Key>
