@@ -703,57 +703,44 @@ Os LOCAIS oficiais de LEILÃO são: Delegacia de Athira para o Estado de SP e De
                 "
 Farms Legalizados<br/>
  <br/>
-Computador Gamer         35.000  16kg<br/>
+Computador Gamer         30.000  16kg<br/>
  
-Ritalina (Metilfenidato) 1500    4kg<br/>
+Placa Mãe Asus           2000    3kg<br/>
  
-Placa Mãe Asus           1500    4kg<br/>
+Memória Kingston         2000    3kg<br/>
  
-Memória Kingston         1500    4kg<br/>
+Placa NVidia             2000    3kg<br/>
  
-Placa NVidia             1500    4kg<br/>
- 
-Processador Intel        1500    4kg<br/>
- 
-Petroleo:                1500    4kg<br/>
+Processador Intel        2000    3kg<br/>
   
-Diamante:                1500    4kg<br/>
+Diamante:                2500    3kg<br/>
  
-Sal:                     1500    4kg<br/>
+Sal:                     1500    3kg<br/>
  
-Cimento:                 1500    4kg<br/>
+Ferro:                   1200    3kg<br/>
  
-Ferro:                   1500    4kg<br/>
+Cobre:                   1300    3kg<br/>
  
-Cobre:                   1500    4kg<br/>
+Whiskey:                 1500    3kg<br/>
  
-Whiskey:                 1500    4kg<br/>
+Whiskey Envelhecido:     4000    3kg<br/>
  
-Whiskey Envelhecido:     3000    4kg<br/>
- 
-Vidro:                   1500    4kg<br/>
- 
-Maconha Ilegal:          1500    4kg</brK
        <br/> 
 Farms Ilegais<br/><br/>
  
-Ouro da Reserva Federal:   xx.000    12kg<br/>
+Ouro da Reserva Federal:   15.000    12kg<br/>
  
-Ouro lavado:               xx.000    12kg<br/>
+Ouro lavado:               20.000    12kg<br/>
  
-Tartarugas:                10.000     4kg<br/>
+Tartarugas:                6.000     3kg<br/>
  
-Metanfetamina:              3000      4kg<br/>
+Metanfetamina:              3500      3kg<br/>
  
-LSD                         2500      4kg<br/>
+Cocaina:                    5000      3kg<br/>
  
-Krokodil                    2500      4kg<br/>
- 
-Cocaina:                    3000      4kg<br/>
- 
-Heroina                     2500      4kg<br/>
+Heroina                     4000      3kg<br/>
    
-Maconha Ilegal:             2500      4kg<br/><br/>
+Maconha Ilegal:             3000      3kg<br/><br/>
                 "
         ]
     ];
@@ -764,16 +751,15 @@ Maconha Ilegal:             2500      4kg<br/><br/>
                 "
 Preço para compra de Licenças:<br/><br/>
 Farms Legalizados PROMOÇÃO!<br/>
-Petroleo:              30.000<br/>
 Whiskey:               30.000<br/>
-Rubi:                  30.000<br/>
 Diamante:              30.000<br/>
-Cimento:               30.000<br/>
 Sal:                   30.000<br/>
-Ferro:                 30.000<br/>
-Cobre:                 30.000<br/>
-Areia:                 30.000<br/>
-Maconha by SnoopDog:   30.000<br/>
+Ferro:                 15.000<br/>
+Cobre:                 18.000<br/>
+Placa de Video:        20.000<br/>
+Memoria:        	   20.000<br/>
+Placa Mãe:             20.000<br/>
+Processador:           20.000<br/>
  <br/>
 Licenca Casa                     400.000<br/>
  <br/>
@@ -781,9 +767,10 @@ Licenca Rebelde(Perde ao ser preso)500.000<br/>
  <br/>              
 Farms Ilegais<br/>
  
-Metanfetamina:   90.000<br/>
+Metanfetamina:   80.000<br/>
 Cocaina:         90.000<br/>
-Maconha Ilegal:  90.0000<br/><br/>
+Heroina:         70.000<br/>
+Maconha Ilegal:  50.000<br/><br/>
                 "
         ]
     ];
