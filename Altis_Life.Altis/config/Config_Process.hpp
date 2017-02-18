@@ -47,7 +47,7 @@ class ProcessAction {
         Text = "STR_Process_LSD";
         //ScrollText = "Contaminate Rye";
         NoLicenseCost = 40000;
-    }
+    };
 	
     class Krokodil {
         MaterialsReq[] = {{"codeina",1}};

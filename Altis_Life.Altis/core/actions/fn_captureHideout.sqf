@@ -6,7 +6,7 @@
     Description:
     Blah blah.
 */
-private _altisArray = ["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"];
+private _altisArray = ["Land_Slum_House03_F","Land_i_Barracks_V2_F"];
 private _tanoaArray = ["Land_School_01_F","Land_Warehouse_03_F","Land_House_Small_02_F"];
 
 private _hideoutObjs = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
