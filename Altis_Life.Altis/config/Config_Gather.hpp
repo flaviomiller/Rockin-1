@@ -1,14 +1,14 @@
 class CfgGather {
     class Resources {
         class apple {
-            amount = 8;
+            amount = 20;
             zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
             item = "";
             zoneSize = 30;
         };
 
         class peach {
-            amount = 8;
+            amount = 20;
             zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
             item = "";
             zoneSize = 30;
@@ -39,28 +39,28 @@ class CfgGather {
             amount = 1;
             zones[] = { "graphics" };
             item = "";
-            zoneSize = 5;
+            zoneSize = 20;
         };
 		
         class motherboard {
             amount = 1;
             zones[] = { "motherboard" };
             item = "";
-            zoneSize = 5;
+            zoneSize = 20;
         };
 		
         class processor {
             amount = 1;
             zones[] = { "processor" };
             item = "";
-            zoneSize = 5;
+            zoneSize = 20;
         };
 		
         class memory {
             amount = 1;
             zones[] = { "memory" };
             item = "";
-            zoneSize = 5;
+            zoneSize = 20;
         };
 		
         class codeina {
@@ -88,21 +88,21 @@ class CfgGather {
             amount = 1;
             zones[] = { "metilfenidato" };
             item = "";
-            zoneSize = 5;
+            zoneSize = 20;
         };
 
         class cocaine_unprocessed {
             amount = 3;
             zones[] = { "cocaine_1" };
             item = "";
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class cannabis {
             amount = 3;
             zones[] = { "weed_1" };
             item = "";
-            zoneSize = 10;
+            zoneSize = 20;
         };
 
         class copper_unrefined {
@@ -110,7 +110,7 @@ class CfgGather {
             zones[] = { "copper_mine" };
             item = "pickaxe";
             mined[] = {"copper_unrefined"};
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class iron_unrefined {
@@ -118,7 +118,7 @@ class CfgGather {
             zones[] = { "iron_mine_1" };
             item = "pickaxe";
             mined[] = { "iron_unrefined" };
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class salt_unrefined {
@@ -126,7 +126,7 @@ class CfgGather {
             zones[] = { "salt_mine" };
             item = "pickaxe";
             mined[] = { "salt_unrefined" };
-	        zoneSize = 8;
+	        zoneSize = 20;
         };
 
         class sand {
@@ -142,7 +142,7 @@ class CfgGather {
             zones[] = { "ruby_mine" };
             item = "pickaxe";
             mined[] = { "ruby_raw" };
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class diamond_uncut {
@@ -150,7 +150,7 @@ class CfgGather {
             zones[] = { "diamond_mine" };
             item = "pickaxe";
             mined[] = { "diamond_uncut" };
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class rock {
@@ -158,7 +158,7 @@ class CfgGather {
             zones[] = { "rock_quarry" };
             item = "pickaxe";
             mined[] = { "rock" };
-            zoneSize = 8;
+            zoneSize = 20;
         };
 
         class oil_unprocessed {
@@ -166,7 +166,7 @@ class CfgGather {
             zones[] = { "oil_field", "oil_field_1", "oil_field_2" };
             item = "pickaxe";
             mined[] = { "oil_unprocessed" };
-            zoneSize = 8;
+            zoneSize = 20;
         };
 	    
         class tobacco {
@@ -174,7 +174,7 @@ class CfgGather {
             zones[] = { "tobacco" };
             item = "";
             mined[] = { "tobacco" };
-            zoneSize = 5;
+            zoneSize = 20;
         };    
 	
     };

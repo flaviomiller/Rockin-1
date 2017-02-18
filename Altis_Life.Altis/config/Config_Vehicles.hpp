@@ -422,8 +422,7 @@ class LifeCfgVehicles {
         price = 60000;
         textures[] = {
             { "PM SP", "cop", {
-                "textures\Veiculos\Policiais\COP_GH_01.paa",
-                "textures\Veiculos\Policiais\COP_GH_02.paa"
+                "textures\Veiculos\Policiais\COP_GH_01.paa"
             }, "" }
         };
     };
@@ -642,8 +641,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "a3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_co.paa"
             } },
             { "SAMU", "med", {
-                "textures\Veiculos\Medicos\taru_base_01_co.paa",
-                "textures\Veiculos\Medicos\taru_base_02_co.paa"
+                "textures\Veiculos\Medicos\taru_base_01_co.paa"
             } }
         };
     };	
@@ -707,8 +705,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 400000;
         textures[] = {
             { "SAMU", "med", {
-                "textures\Veiculos\Medicos\medic_Zamak_Cab_CO.paa",
-                "textures\Veiculos\Medicos\medic_Zamak_Kuz_CO.paa"
+                "textures\Veiculos\Medicos\medic_Zamak_Cab_CO.paa"
             }, "" }
         };
     };
