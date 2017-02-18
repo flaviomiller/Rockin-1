@@ -567,9 +567,6 @@ class LifeCfgVehicles {
             { "SAMU", "med", {
                 "textures\Veiculos\Medicos\medic_offroad.paa"
             }, "" },
-            { "PM RJ", "cop", {
-                "textures\Veiculos\Policiais\POLICE_OFF_RJ.paa"
-            }, "" },
             { "PM SP", "cop", {
                 "textures\Veiculos\Policiais\POLICE_OFF_SP.paa"
             }, "" }
@@ -735,9 +732,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Policia SP", "cop", {
                 "textures\Veiculos\Policiais\POLICE_HATCH_SP.paa"
             }, "" },
-            { "Policia RJ", "cop", {
-                "textures\Veiculos\Policiais\POLICE_HATCH_RJ.paa"
-            }, "" },
             { "Policia Federal", "cop", {
                 "textures\Veiculos\Policiais\POLICE_HATCH_FED.paa"
             }, "" }
@@ -864,9 +858,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "PM SP", "cop", {
                 "textures\Veiculos\Policiais\SUV_PMSP.paa"
-            }, "" },
-            { "PM RJ", "cop", {
-                "textures\Veiculos\Policiais\SUV_PMRJ.paa"
             }, "" }
         };
     };
@@ -906,10 +897,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "PM SP", "cop", {
                 "textures\Veiculos\Policais\HUNTER_PMSP.paa",
-                "textures\Veiculos\Policais\cop_hunterback.paa"
-            }, "" },
-            { "PM RJ", "cop", {
-                "textures\Veiculos\Policais\HUNTER_BOPE.paa",
                 "textures\Veiculos\Policais\cop_hunterback.paa"
             }, "" }
         };

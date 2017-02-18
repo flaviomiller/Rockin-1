@@ -92,7 +92,7 @@ class CfgSpawnPoints {
             };
 			
             class HW {
-                displayName = "P. Rodoviaria Telos";
+                displayName = "P. Rodoviaria Sofia";
                 spawnMarker = "cop_spawn_5";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 3";

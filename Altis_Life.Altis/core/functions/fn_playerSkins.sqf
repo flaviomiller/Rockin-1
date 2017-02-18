@@ -11,21 +11,6 @@ private ["_skinName"];
 switch (playerSide) do {
     case civilian: {
         if (LIFE_SETTINGS(getNumber,"civ_skins") isEqualTo 1) then {
-            if (uniform player isEqualTo "U_C_Poloshirt_blue") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\EmpresaASUS.jpg"];
-            };
-            if (uniform player isEqualTo "U_C_Poloshirt_burgundy") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\EmpresaIntel.jpg"];
-            };
-            if (uniform player isEqualTo "U_C_Poloshirt_stripped") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\EmpresaKingston.jpg"];
-            };
-            if (uniform player isEqualTo "U_C_Poloshirt_tricolour") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\EmpresaNvidia.jpg"];
-            };
-            if (uniform player isEqualTo "U_C_Poloshirt_salmon") then {
-                player setObjectTextureGlobal [0, "textures\roupas\civis\EmpresaSamsung.jpg"];
-            };
             if (uniform player isEqualTo "U_C_Poloshirt_redwhite") then {
                 player setObjectTextureGlobal [0, "textures\roupas\civis\civilian_uniform_7.jpg"];
             };
@@ -43,10 +28,6 @@ switch (playerSide) do {
                     _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
                 };
 				*/
-				if (FETCH_CONST(life_coplevel) isEqualTo 1) then {
-                    _skinName = "textures\Roupas\Policiais\CET.jpg";
-                };
-				
 				if (FETCH_CONST(life_coplevel) isEqualTo 2) then {
                     _skinName = "textures\Roupas\Policiais\CET.jpg";
                 };
@@ -62,40 +43,20 @@ switch (playerSide) do {
                     _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
                 };
 				*/
-				if (FETCH_CONST(life_coplevel) isEqualTo 3) then {
-                    _skinName = "textures\Roupas\Policiais\cop_srj.jpg";
-                };
-				
 				if (FETCH_CONST(life_coplevel) isEqualTo 4) then {
                     _skinName = "textures\Roupas\Policiais\cop_ssp.jpg";
-                };
-				
-				if (FETCH_CONST(life_coplevel) isEqualTo 5) then {
-                    _skinName = "textures\Roupas\Policiais\cop_srj.jpg";
                 };
 				
 				if (FETCH_CONST(life_coplevel) isEqualTo 6) then {
                     _skinName = "textures\Roupas\Policiais\cop_ssp.jpg";
                 };
 				
-				if (FETCH_CONST(life_coplevel) isEqualTo 7) then {
-                    _skinName = "textures\Roupas\Policiais\cop_srj.jpg";
-                };
-				
 				if (FETCH_CONST(life_coplevel) isEqualTo 8) then {
                     _skinName = "textures\Roupas\Policiais\cop_ssp.jpg";
-                };
-
-				if (FETCH_CONST(life_coplevel) isEqualTo 9) then {
-                    _skinName = "textures\Roupas\Policiais\cop_srj.jpg";
                 };
 				
 				if (FETCH_CONST(life_coplevel) isEqualTo 10) then {
                     _skinName = "textures\Roupas\Policiais\cop_ssp.jpg";
-                };
-				
-				if (FETCH_CONST(life_coplevel) isEqualTo 11) then {
-                    _skinName = "textures\Roupas\Policiais\cop_coronelrj.jpg";
                 };
 				
 				if (FETCH_CONST(life_coplevel) isEqualTo 12) then {
