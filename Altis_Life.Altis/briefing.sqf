@@ -728,9 +728,9 @@ Whiskey Envelhecido:     4000    3kg<br/>
        <br/> 
 Farms Ilegais<br/><br/>
  
-Ouro da Reserva Federal:   15.000    12kg<br/>
+Ouro da Reserva Federal:   50.000    12kg<br/>
  
-Ouro lavado:               20.000    12kg<br/>
+Ouro lavado:               60.000    12kg<br/>
  
 Tartarugas:                6.000     3kg<br/>
  

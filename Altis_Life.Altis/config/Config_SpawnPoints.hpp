@@ -47,13 +47,6 @@ class CfgSpawnPoints {
                 conditions = "license_civ_rebel";
             };
 
-            class RebelS {
-                displayName = "Morro do Korintia";
-                spawnMarker = "Rebelop_1";
-                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-                conditions = "license_civ_rebel";
-            };
-			
             class MorumbiVIP {
                 displayName = "Morumbi VIP";
                 spawnMarker = "prem_spawn";
